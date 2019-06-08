@@ -139,18 +139,22 @@ export default {
         top: 40px;
         left: 12.5%;
 
-        #Balls {
-            #Concepting:hover, #Inspiration:hover, #Prototyping:hover {
-                cursor: pointer;
-                padding: 10px 0;
-                
-                path {
-                    animation: pulse 1s infinite;
+        svg {
+            width: 100%;
 
-                    @keyframes pulse {
-                        0% { transform: scale(1); }
-                        50% { transform: scale(1.05); }
-                        100% { transform: scale(1); }
+            #Balls {
+                #Concepting:hover, #Inspiration:hover, #Prototyping:hover {
+                    cursor: pointer;
+                    padding: 10px 0;
+                    
+                    path {
+                        animation: pulse 1s infinite;
+
+                        @keyframes pulse {
+                            0% { transform: scale(1); }
+                            50% { transform: scale(1.05); }
+                            100% { transform: scale(1); }
+                        }
                     }
                 }
             }
