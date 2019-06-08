@@ -3,10 +3,10 @@
         <div class="subtitle">
             <h4>Well done!</h4>
             <p class="description">I’m sure you created an amazing design, now it’s time to build it for real. Get yourself into a CMS or into coding so everyone can enjoy your beatiful work. Do you have any question or proposal for this website?</p>
-            <a href="form" class="contactbutton">Get in touch</a>
+            <a href="#form" class="contactbutton">Get in touch</a>
         </div>
 
-        <div class="formbox">
+        <div id="form" class="formbox">
             <mdb-container style="padding: 0;">
                 <mdb-row>
                     <mdb-col>
