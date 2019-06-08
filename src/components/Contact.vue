@@ -262,6 +262,7 @@ export default {
                 border: solid 3px $action-color;
                 border-radius: 20px;
                 text-decoration: none;
+                outline: none;
 
                 p {
                     flex-direction: row;
