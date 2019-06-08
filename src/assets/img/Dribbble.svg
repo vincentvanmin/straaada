@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="86px" viewBox="0 0 86 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="35" cy="35" r="35"></circle>
+        <filter x="-16.4%" y="-16.4%" width="135.7%" height="135.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="1" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.196078431   0 0 0 0 0.149019608   0 0 0 0 0.450980392  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Strada" transform="translate(-163.000000, -4209.000000)">
+            <g id="View-5" transform="translate(150.000000, 3878.000000)">
+                <g id="Table" transform="translate(0.000000, 258.000000)">
+                    <g id="List-Items" transform="translate(20.000000, 80.000000)">
+                        <g id="Dribbble">
+                            <g id="Logo">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Oval">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                                    <use fill="#5E7EC2" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                </g>
+                                <g id="Dribbble" mask="url(#mask-2)" fill-rule="nonzero">
+                                    <circle id="Oval" fill="#C42663" cx="35" cy="35" r="35"></circle>
+                                    <path d="M17,58.0447364 C20.7253969,52.0017833 25.9552918,47.0564927 32.165114,43.7048891 C40.4884181,39.206648 39.3032227,40.2426066 41.6736135,47.3852682 C42.9396177,51.2292196 43.8285142,55.1549573 44.7712833,59.080695 C45.3369448,61.4252327 44.9059646,62.3794051 42.8857452,62.8701223 C33.7543533,65.0238256 25.107814,64.4513222 17,58.0447364 Z" id="Path" fill="#E94B88"></path>
+                                    <path d="M6.17656154,35.9999621 C8.07586489,35.5367885 10.0087127,35.2200459 11.9576687,35.0525917 C18.6850836,34.8556651 25.3718662,33.9482436 31.9038582,32.345819 C35.1916916,31.5879227 35.5752722,31.8315322 37,35.5939462 C26.8077163,38.8150056 19.4374897,45.7172758 13.1084104,54 C8.45064633,51.0225501 5.19021151,42.6856904 6.17656154,35.9999621 Z" id="Path" fill="#E84B88"></path>
+                                    <path d="M22.1069519,10 C25.878416,15.1507097 29.1894074,20.6372438 32,26.3934426 C23.8196288,28.5201146 15.4368054,29.7294399 7,30 C8.93590646,21.3989152 14.4547861,14.0925046 22.1069519,10 L22.1069519,10 Z" id="Path" fill="#E84B88"></path>
+                                    <path d="M29,8.1839125 C31.4474111,7.00437334 34.258495,6.69376346 36.9260213,7.30812916 C42.0228441,7.67891374 46.923282,9.33274623 51.1222854,12.0991792 C53.4566616,13.7219542 53.7009568,14.4947042 51.3665806,16.1947543 C48.0250169,18.5161083 44.5546605,20.6657233 40.9704637,22.6343377 C39.667556,23.4070877 38.6360875,22.891921 37.8489142,21.6812793 C34.8359403,17.2766043 32.1215495,12.9234459 29,8.1839125 Z" id="Path" fill="#E84B88"></path>
+                                    <path d="M62.953182,34 L45.6802384,33.7212544 C44.4801766,33.9106818 43.3308002,33.1473823 42.993933,31.9372822 C42.6447133,30.8780488 42.2417675,29.8188153 42,29.1498258 L57.1776254,18 C60.454918,20.4529617 63.4098539,28.2299652 62.953182,34 Z" id="Path" fill="#E84A87"></path>
+                                    <path d="M52.1129916,58 L47,39.2624846 C51.5726984,38.7675533 56.1934769,38.9733667 60.7049258,39.8729136 C62.9451541,40.4833426 63.3404885,41.0406908 62.7606647,43.2966239 C61.0810618,49.3268551 57.3012662,54.5463764 52.1129916,58 L52.1129916,58 Z" id="Path" fill="#E84B88"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="86px" viewBox="0 0 86 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="35" cy="35" r="35"></circle>
+        <filter x="-16.4%" y="-16.4%" width="135.7%" height="135.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="1" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.196078431   0 0 0 0 0.149019608   0 0 0 0 0.450980392  0 0 0 0.25 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Strada" transform="translate(-156.000000, -9246.000000)">
+            <g id="Logo" transform="translate(162.843509, 9253.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    <use fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Framer" mask="url(#mask-2)" fill-rule="nonzero">
+                    <g transform="translate(21.156491, 14.000000)" id="Path">
+                        <path d="M13.4651677,13.9431944 C13.4104313,13.8915529 13.3556948,13.8450756 13.3059344,13.78827 L0.23387394,0.227222427 C0.159985941,0.16924427 0.081782676,0.117440326 0,0.072298045 L0.0646885367,0 L27,0 L27,14 L13.5646885,14 L13.4651677,13.9431944 Z" fill="#FDFDFD"></path>
+                        <path d="M13.4751014,14 L13.5647363,14.0565345 C13.6195131,14.123348 13.6643305,14.20558 13.7240871,14.267254 L19.9188491,20.681351 L26.8904463,27.876652 C26.9301515,27.9146268 26.9667907,27.9558795 27,28 L13.8087422,28 L13.5099594,28 L13.2659535,28 L0.308742162,28 L0.0398376983,28 C0.0206582041,27.9363319 0.00732029531,27.8709439 0,27.804699 L0,14.174743 C0,14.1490455 0,14.1182085 0,14.0565345 L13.1763187,14.0565345 C13.2771167,14.0452432 13.376978,14.0263479 13.4751014,14 Z" fill="#C9F1FC"></path>
+                        <path d="M0,28 L0.279689234,28 L13.7462079,28 L14,28 L14,41.80369 C14,41.8501845 14,41.896679 14,42 C13.8964114,41.9070111 13.8238994,41.8450185 13.7565668,41.7726937 L3.72401036,31.7505535 L0.176100629,28.2118081 C0.113947466,28.1446494 0.0569737329,28.0671587 0,28 Z" fill="#4FB4F3"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

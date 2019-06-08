@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="40px" viewBox="0 0 21 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>battery</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Strada" transform="translate(-290.000000, -3038.000000)" fill-rule="nonzero">
+            <g id="View-3" transform="translate(150.000000, 1478.000000)">
+                <g id="Digital" transform="translate(0.000000, 769.000000)">
+                    <g id="More-tools" transform="translate(0.000000, 511.000000)">
+                        <g id="Balls" transform="translate(0.000000, 150.000000)">
+                            <g id="Balsamiq">
+                                <g id="Icons" transform="translate(50.000000, 130.000000)">
+                                    <g id="battery" transform="translate(90.000000, 0.000000)">
+                                        <path d="M19.2752,40 L1.7248,40 C0.7721,40 0,39.2442407 0,38.3117037 L0,4.6882963 C0,3.75575926 0.7721,3 1.7248,3 L19.2752,3 C20.2279,3 21,3.75575926 21,4.6882963 L21,38.3117037 C21,39.2442407 20.2279,40 19.2752,40 Z" id="Path" fill="#43B05C"></path>
+                                        <rect id="Rectangle" fill="#C7CAC7" x="7" y="0" width="7" height="3"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

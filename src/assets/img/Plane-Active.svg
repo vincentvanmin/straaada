@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="448px" height="448px" viewBox="0 0 448 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>paper-airplane</title>
+    <desc>Created with Sketch.</desc>
+    <g id="paper-airplane" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="#4D0DB9" id="Shape" stroke="#979797">
+            <path d="M0,240 L128,288 L144,448 L224,336 L336,448 L448,0 L0,240 L0,240 Z M318.7,385.4 L224,288 L352,112 L160,265.8 L77.4,234.8 L399.4,62.3 L318.7,385.4 L318.7,385.4 Z"></path>
+        </g>
+    </g>
+</svg>

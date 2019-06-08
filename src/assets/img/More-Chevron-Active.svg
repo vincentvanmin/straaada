@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="23px" viewBox="0 0 40 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>chevron-down</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Strada" transform="translate(-295.000000, -1245.000000)" fill="#FFFFFF">
+            <g id="View-2" transform="translate(0.000000, 758.000000)">
+                <g id="Blocks" transform="translate(150.000000, 0.000000)">
+                    <g id="More" transform="translate(90.000000, 375.000000)">
+                        <g id="chevron-down">
+                            <g transform="translate(55.000000, 112.000000)">
+                                <path d="M20,15.3003906 L20,15.3003906 L35.5535714,0.278515625 C35.9375,-0.098828125 36.5714286,-0.08984375 36.9642857,0.296484375 L39.6964286,2.9828125 C40.0892857,3.36914063 40.0982143,3.99804688 39.7142857,4.37539062 L20.7232143,22.7214844 C20.5267857,22.9191406 20.2589286,23.0089844 20,22.9910156 C19.7321429,23 19.4732143,22.9101562 19.2767857,22.7214844 L0.285714286,4.37539062 C-0.0982142857,3.99804687 -0.0892857143,3.36914062 0.303571429,2.9828125 L3.03571429,0.296484375 C3.42857143,-0.08984375 4.0625,-0.098828125 4.44642857,0.278515625 L20,15.3003906 L20,15.3003906 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

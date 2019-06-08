@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="149px" height="5px" viewBox="0 0 149 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>Rating</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Strada" transform="translate(-912.000000, -4942.000000)">
+            <g id="View-5" transform="translate(150.000000, 3878.000000)">
+                <g id="Table" transform="translate(0.000000, 258.000000)">
+                    <g id="List-Items" transform="translate(20.000000, 80.000000)">
+                        <g id="Awwwards" transform="translate(0.000000, 641.000000)">
+                            <g id="Rating" transform="translate(742.000000, 85.000000)">
+                                <rect id="Offer-sent" fill="#4D0DB9" x="-1.13686838e-13" y="0" width="24" height="5" rx="2.5"></rect>
+                                <rect id="Accepted" fill="#4D0DB9" x="31" y="0" width="24" height="5" rx="2.5"></rect>
+                                <rect id="Interview-scheduled" fill="#4D0DB9" x="63" y="0" width="24" height="5" rx="2.5"></rect>
+                                <rect id="Interview-took-place" fill="#AAAAAA" x="94" y="0" width="24" height="5" rx="2.5"></rect>
+                                <rect id="Contract-signed" fill="#AAAAAA" x="125" y="0" width="24" height="5" rx="2.5"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="30px" viewBox="0 0 18 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>chevron-right</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Strada" transform="translate(-1246.000000, -4240.000000)" fill="#AAAAAA">
+            <g id="View-5" transform="translate(150.000000, 3878.000000)">
+                <g id="Table" transform="translate(0.000000, 258.000000)">
+                    <g id="List-Items" transform="translate(20.000000, 80.000000)">
+                        <g id="Dribbble">
+                            <g id="chevron-right" transform="translate(1085.000000, 38.979845) rotate(-360.000000) translate(-1085.000000, -38.979845) translate(1070.000000, 23.979845)">
+                                <g transform="translate(6.432353, 0.000000)" id="Shape">
+                                    <path d="M11.4099551,15.0088235 L11.4099551,15.0088235 L0.206940358,3.34348346 C-0.0744750837,3.05536765 -0.067774716,2.57964154 0.220341093,2.28482537 L2.22375102,0.234512868 C2.51186683,-0.0603033088 2.98089256,-0.0670036765 3.262308,0.221112132 L16.9444587,14.4727941 C17.0918668,14.6202022 17.1588705,14.8212132 17.1454698,15.0155239 C17.1521701,15.2165349 17.0851665,15.4108456 16.9444587,15.5582537 L3.262308,29.8032353 C2.98089256,30.0913511 2.51186683,30.0846507 2.22375102,29.7898346 L0.220341093,27.7395221 C-0.067774716,27.4447059 -0.0744750837,26.9689798 0.206940358,26.680864 L11.4099551,15.0088235 L11.4099551,15.0088235 Z"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

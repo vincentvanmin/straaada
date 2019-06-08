@@ -5,12 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>straaada</title>
+    <title>Straaada</title>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but straaada doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>We're sorry but Straaada doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+
+    <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" hidden>
+      <p class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+      </p>
+      <p>
+        <label>Name: <input type="text" name="name" /></label>   
+      </p>
+      <p>
+        <label>Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>URL: <input type="text" name="url" /></label>
+      </p>
+      <p>
+        <label>Reason: <select name="reason" multiple>
+          <option value="Feedback">Ask for feedback</option>
+          <option value="Suggestion">Suggestion for Straaada</option>
+          <option value="Question">Other question</option>
+        </select></label>
+      </p>
+      <p>
+        <input name="rating" id="wow" type="radio" checked><label for="wow">Wow!</label>
+        <input name="rating" id="okay" type="radio"><label for="okay">Okay</label>
+        <input name="rating" id="hmm" type="radio"><label for="hmm">Hmm</label>
+      </p>
+      <p>
+        <label>Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
