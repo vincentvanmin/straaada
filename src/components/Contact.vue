@@ -92,7 +92,7 @@ export default {
             fetch('/', {
                 method: 'post',
                 headers: {
-                    'Content-Type': 'application/x-www-urlencoded'
+                    'Content-Type': 'application/x-www-form-urlencoded'
                 },
                 body: this.encode({
                     'form-name': 'contact',
@@ -251,7 +251,7 @@ export default {
             display: flex;
             justify-content: center;
             padding-top: 30px;
-            
+
             .submitbutton {
                 width: 250px;
                 height: 40px;
