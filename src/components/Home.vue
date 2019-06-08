@@ -146,7 +146,6 @@ export default {
                 
                 path {
                     animation: pulse 1s infinite;
-                    border: 20px solid #000;
 
                     @keyframes pulse {
                         0% { transform: scale(1); }
