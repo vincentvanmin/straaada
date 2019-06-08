@@ -41,7 +41,7 @@
                                 <mdb-textarea v-model="form.message" name="message" :rows="2" label="Message" class="inputmessage" required="required" />
                             </div>
                             <div class="buttonbox">
-                                <button type="submit" class="submitbutton">
+                                <button type="submit" class="submitbutton" @click="reload()">
                                     <p>Send</p>
                                     <div class="plane"></div>
                                 </button>
@@ -103,6 +103,10 @@ export default {
             .catch(e => console.error(e))
         }
     },
+
+    reload() {
+        window.location.reload()
+    }
 }
 </script>
 
