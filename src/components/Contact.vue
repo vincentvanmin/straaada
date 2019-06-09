@@ -186,8 +186,16 @@ export default {
 
             .collapsed {
                 width: 70%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .inputurl {
+                    width: 100%;
+                }
 
                 .inputreason {
+                    width: 100%;
                     border: none;
                     border-bottom: 1px solid #ced4da;
                     border-radius: 0;
@@ -208,14 +216,14 @@ export default {
 
             .inputrating {
                 width: 25%;
-                margin-top: 1.5rem;
+                margin-top: 1rem;
 
                 p {
                     font-family: 'Open Sans';
                     font-weight: normal;
                     font-size: 1.1em;
                     line-height: 25px;
-                    margin-bottom: 10px;
+                    margin-bottom: 0;
                 }
 
                 .ratingoption {

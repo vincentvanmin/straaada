@@ -72,7 +72,12 @@
         <div class="timelapsebox">
             <div class="timelapse">
                 <img class="laptop" src="../assets/img/Laptop.png" alt="Building this website">
-                <img class="video" src="../assets/img/Timelapse.gif" alt="Building this website">
+                <video class="video" width="540" height="329" autoplay>
+                    <source src="../assets/img/Timelapse.mp4" type="video/mp4">
+                    <!-- <source src="../assets/img/Timelapse.ogg" type="video/ogg"> -->
+                    <p>Your browser does not support this video.</p>
+                </video>
+                <!-- <img class="video" src="../assets/img/Timelapse.gif" alt="Building this website"> -->
             </div> 
         </div> 
     </section>
@@ -116,8 +121,8 @@ export default {
         h1 {
             font-family: 'Nunito';
             font-weight: bold;
-            font-size: 2.6em;
-            line-height: 60px;
+            font-size: 2.9vw;
+            line-height: 160%;
             color: $text-color;
             letter-spacing: 0;
         }
@@ -184,9 +189,25 @@ export default {
         }
         
     }
-}
 
-#edit {
-            width: 100px;
+    @media (max-width: 1300px) {
+        .headertext h2 {
+            font-size: 1em;
         }
+
+        .timelapsebox {
+            transform: scale(.8);
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .headertext h2 {
+            width: 90%;
+        }
+
+        .timelapsebox {
+            transform: scale(.7);
+        }
+    }
+}
 </style>

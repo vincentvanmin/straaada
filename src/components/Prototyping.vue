@@ -169,7 +169,7 @@ export default {
                         },
                         {
                             id: 2,
-                            name: "TheNounProject",
+                            name: "The Noun Project",
                             price: "Free",
                             priceimg: require('../assets/img/Free.svg'),
                             rating: 5,
@@ -178,7 +178,7 @@ export default {
                         },
                         {
                             id: 3,
-                            name: "FontAwesome",
+                            name: "Font Awesome",
                             price: "Free",
                             priceimg: require('../assets/img/Free.svg'),
                             rating: 5,
@@ -557,7 +557,7 @@ export default {
         min-height: 100%;
         background-image: url(../assets/img/Prototyping-Process.svg);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100vw;
 
         .balls {
             width: 75%;
@@ -567,7 +567,7 @@ export default {
 
             .ball {
                 position: absolute;
-                width: 36%;
+                width: 40%;
                 background-color: $white-background;
                 border-radius: 50%;
                 box-shadow: 0px 0px 5px rgba(77, 13, 85, 0.20);
@@ -611,6 +611,7 @@ export default {
                             h5 {
                                 flex-direction: row;
                                 width: 75%;
+                                margin: 0;
 
                                 a {
                                     font-family: 'Open Sans';
@@ -657,22 +658,22 @@ export default {
 
             #Icons {
                 right: 0;
-                top: 25%;
+                top: 22%;
             }
 
             #Illustrations {
-                left: 28%;
-                top: 43%;
+                left: 24%;
+                top: 42%;
             }
 
             #Videos {
                 position: relative !important;
-                margin-top: 43%;
+                margin-top: 40%;
             }
 
             #Fonts {
-                bottom: 7%;
-                right: 12%;
+                bottom: 8%;
+                right: 7%;
             }
         }
     }
@@ -760,6 +761,7 @@ export default {
                         justify-content: flex-start;
                         align-items: center;
                         flex-wrap: nowrap;
+                        padding-right: 1%;
 
                         .logo {
                             flex-direction: row;
@@ -782,6 +784,7 @@ export default {
                                 font-size: 1.25em;
                                 line-height: 30px;
                                 color: $text-color;
+                                margin: 0;
                             }
 
                             .description {
@@ -802,6 +805,7 @@ export default {
                         justify-content: space-around;
                         align-items: center;
                         flex-wrap: wrap;
+                        padding-right: 1%;
 
                         .price, .level {
                             flex-direction: column;
@@ -969,6 +973,74 @@ export default {
                         }
                     }
                 }
+            }
+        }
+    }
+
+    @media (max-width: 1300px) {
+        .titlebox {
+            .title {
+                width: 62%;
+                padding-left: 20px; 
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .titlebox {
+            .title { 
+                width: 60%;
+
+                h3 {
+                    padding-bottom: 15px;
+                }
+            }
+            .big-number {
+                width: 27%;
+            }
+        }
+
+        .process .balls {
+            padding-top: 20%;
+
+            .ball {
+                width: 44%;
+
+                .content .resources .resource h5 {
+                    a {
+                        font-size: 1em;
+                    }
+                }
+            }
+
+            #Icons {
+                top: 20%;
+            }
+
+            #Illustrations {
+                 left: 22%;
+                 top: 39.5%;
+            }
+
+            #Videos {
+                margin-top: 38%;
+            }
+
+        } 
+    }
+
+    @media (max-width: 1100px) {
+        .titlebox {
+            .big-number {
+                width: 30%;
+            }
+            
+            .title {
+                width: 70%;
+            }
+
+            .dots {
+                display: none;
             }
         }
     }

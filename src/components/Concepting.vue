@@ -35,7 +35,7 @@
                         </div>
                         <div id="step3" class="step">
                             <p class="what">Start explaining</p>
-                            <p class="how">Describe why you put which content on a specific place on your site.</p>
+                            <p class="how">Describe why you put the content on a specific place on your site.</p>
                         </div>
                     </div>
                 </div>  
@@ -49,6 +49,10 @@
                 <div class="left">
                     <!-- <iframe src="" frameborder="0"></iframe> -->
                     <img src="../assets/img/Placeholder-Freehand.jpg" alt="How to work with Freehand">
+                    <a href="#" target="_blank" class="visitbuttonmobile">
+                        <p>Visit website</p>
+                        <div class="arrow"></div>
+                    </a>
                 </div>
                 <div class="right">
                     <p class="name">Invision Freehand</p>
@@ -194,7 +198,7 @@ export default {
 
         .title {
             flex-direction: row;
-            width: 60%;
+            width: 61%;
             padding-right: 150px;
 
             h3 {
@@ -240,6 +244,7 @@ export default {
                 line-height: 30px;
                 color: $text-color;
                 text-align: center;
+                margin-bottom: 0;
             }
         }
 
@@ -251,6 +256,7 @@ export default {
             .left {
                 flex-direction: row;
                 width: 50%;
+                align-self: center;
 
                 iframe {
                     width: 100%;
@@ -258,6 +264,10 @@ export default {
                 }
                 img {
                     width: 100%;
+                }
+
+                .visitbuttonmobile {
+                    display: none;
                 }
             }
 
@@ -282,6 +292,7 @@ export default {
 
                     img {
                         width: 100%;
+                        z-index: 1;
                     }
 
                     .line {
@@ -289,7 +300,7 @@ export default {
                         height: calc(100% - 10px);
                         width: calc(50% + 2px);
                         border-right: solid 4px $action-color;
-                        z-index: -1;
+                        z-index: 0;
                     }
                 }
 
@@ -311,7 +322,7 @@ export default {
                             font-size: 1.1em;
                             line-height: 30px;
                             color: $text-color;
-                            
+                            margin-bottom: 2%;
                         }
                         .how {
                             font-family: 'Open Sans';
@@ -321,6 +332,10 @@ export default {
                             color: $text-color;
                             text-align: justify;
                         }
+                    }
+
+                    #step3 .how {
+                        margin-bottom: 0;
                     }
                 }
 
@@ -538,7 +553,7 @@ export default {
                     .visit-website-button {
                         display: block;
                         margin: 0 auto;
-                        width: 70%;
+                        width: 60%;
                         height: 40px;
                         background-color: $action-color;
                         border: solid 3px $action-color;
@@ -560,6 +575,129 @@ export default {
                     }
                 }
             }
+        }
+    }
+
+    @media (max-width: 1300px) {
+        .more-tools .balls .ball .content {
+            .what {padding-top: 2%;}
+            .icons {padding: 8% 10% 8% 10%;}
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .more-tools .balls .ball {
+            width: 30%;
+
+            .content {
+                .what {padding-top: 2%;}
+                .icons {padding: 6% 10% 8% 10%;}
+            }
+        }
+
+        .option {
+            .subtitle {
+                border-top: solid 3px $action-color;
+                border-bottom: solid 3px $action-color;
+            }
+
+            .concept {
+                .right {
+                    .counter .line {
+                        border-right: solid 3px $action-color;
+                    }
+                    
+                    .visitbutton {
+                        display: none;
+                    }
+                }
+
+                .left .visitbuttonmobile {
+                    margin-top: 20px;
+                    width: 250px;
+                    height: 40px;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-self: flex-end;
+                    background-color: $action-color;
+                    border: solid 3px $action-color;
+                    border-radius: 20px;
+                    text-decoration: none;
+
+                    p {
+                        flex-direction: row;
+                        font-family: 'Open Sans';
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 36px;
+                        color: #ffffff;
+                        padding: 0 20px 0 0;
+                    }
+
+                    .arrow {
+                        flex-direction: row;
+                        width: 25px;
+                        margin: 7px 0;
+                        height: 100%;
+                        background-image: url(../assets/img/Button-Arrow.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+
+                    &:hover {
+                        background-color: $light-background;
+                        transition: all .5s;
+
+                        p {
+                            color: $action-color;
+                            transition: all .5s;
+                        }
+
+                        .arrow {
+                            background-image: url(../assets/img/Button-Arrow-Active.svg);
+                            transition: all .5s;
+                            animation: hop 1s ease-out infinite;
+                        }
+
+                        @keyframes hop {
+                            0% { transform: translateX(0px) }
+                            40% { transform: translateX(5px) }
+                            100% { transform: translateX(0px) }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .titlebox {
+            .big-number {
+                width: 30%;
+            }
+            
+            .title {
+                width: 70%;
+            }
+
+            .dots {
+                display: none;
+            }
+        }
+
+        .option .concept .right .steps .step {
+            .what {
+                margin-bottom: 0;
+            }
+            .how {
+                margin-bottom: 2%;
+            }
+        }
+
+        .more-tools .balls .ball .content {
+            h5 {padding-top: 8%;}
+            .what {padding-top: 2%;}
         }
     }
 }

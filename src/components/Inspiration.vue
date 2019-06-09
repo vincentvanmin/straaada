@@ -4,7 +4,7 @@
             <img src="../assets/img/Dots.svg" alt="..." class="dots">
             <div class="title">
                 <h3>Inspiration</h3>
-                <p class="main-description">Based on the concept you just made, you are now ready to get inspired! Make your way to some tools shown below to get some great ideas for your final design.</p>
+                <p class="main-description">Based on the concept you just made, you are now ready to get some great ideas for your final design. Professional designers are helping you for free!</p>
             </div>
             <p class="big-number">02</p>
         </div>
@@ -277,6 +277,7 @@ export default {
                     justify-content: flex-start;
                     align-items: center;
                     flex-wrap: nowrap;
+                    padding-right: 1%;
 
                     .logo {
                         flex-direction: row;
@@ -299,6 +300,7 @@ export default {
                             font-size: 1.25em;
                             line-height: 30px;
                             color: $text-color;
+                            margin: 0;
                         }
 
                         .description {
@@ -319,6 +321,7 @@ export default {
                     justify-content: space-around;
                     align-items: center;
                     flex-wrap: wrap;
+                    padding-right: 1%;
 
                     .price, .level {
                         flex-direction: column;
@@ -462,6 +465,48 @@ export default {
                         }
                     }
                 }
+            }
+        }
+    }
+
+    @media (max-width: 1300px) {
+        .titlebox {
+            .title {
+                width: 57%;
+                padding-right: 30px;
+
+                h3 {
+                    padding-bottom: 15px;
+                } 
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .titlebox {
+            .title { 
+                width: 55%;
+                padding-right: 0; 
+            }
+            .big-number {
+                width: 27%;
+            }
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .titlebox {
+            .big-number {
+                width: 30%;
+            }
+            
+            .title {
+                padding-right: 40px;
+                width: 70%;
+            }
+
+            .dots {
+                display: none;
             }
         }
     }
