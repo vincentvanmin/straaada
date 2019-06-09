@@ -178,6 +178,11 @@ export default {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+
+            input[name=name]:focus:not([readonly]), textarea.md-textarea:focus:not([readonly]) {
+                box-shadow: 0 1px 0 0 $action-color;
+                border-bottom: 1px solid $action-color;
+            }
             
             .inputname, .inputemail {
                 flex-direction: row;
