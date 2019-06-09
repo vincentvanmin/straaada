@@ -586,6 +586,9 @@ export default {
     }
 
     @media (max-width: 1200px) {
+        .titlebox .title {
+            padding-left: 10px;
+        }
         .more-tools .balls .ball {
             width: 30%;
 
@@ -678,7 +681,8 @@ export default {
             }
             
             .title {
-                width: 70%;
+                width: calc(70% + 20px);
+                padding-left: 20px;
             }
 
             .dots {

@@ -990,13 +990,14 @@ export default {
         .titlebox {
             .title { 
                 width: 60%;
+                padding-left: 10px;
 
                 h3 {
                     padding-bottom: 15px;
                 }
             }
             .big-number {
-                width: 27%;
+                width: 30%;
             }
         }
 
@@ -1036,7 +1037,8 @@ export default {
             }
             
             .title {
-                width: 70%;
+                width: calc(70% + 40px);
+                padding-left: 40px;
             }
 
             .dots {
