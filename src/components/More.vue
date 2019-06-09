@@ -113,6 +113,7 @@ export default {
                         color: $text-color;
                         text-align: center;
                         padding-top: 10%;
+                        margin: 0;
                     }
 
                     .what {
@@ -259,6 +260,26 @@ export default {
                 transition: all .5s;
             }
         }
+    }
+
+    @media (max-width: 1200px) {
+        .extratool #muzli {
+            .ball {
+                width: 35%;
+            }
+
+            .explenation {
+                padding-left: 15%;
+            }
+        } 
+    }
+
+    @media (max-width: 1100px) {
+        .extratool #muzli {
+            .explenation {
+                padding-left: 10%;
+            }
+        } 
     }
 }
 </style>
