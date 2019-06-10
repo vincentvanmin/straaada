@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="74px" height="74px" viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
     <title>1</title>
     <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -12,9 +12,7 @@
                             <g id="Balls" transform="translate(0.000000, 5.000000)">
                                 <g id="1">
                                     <circle id="Oval" stroke="#4D0DB9" stroke-width="4" fill="#F5F6FA" cx="35" cy="35" r="35"></circle>
-                                    <text font-family="OpenSans-Semibold, Open Sans" font-size="30" font-weight="500" letter-spacing="-0.030000024" fill="#322673">
-                                        <tspan x="26.4529883" y="47">1</tspan>
-                                    </text>
+                                    <path d="M37.8787695,47 L34.4363867,47 L34.4363867,33.171875 C34.4363867,31.5214761 34.4754488,30.2128955 34.5535742,29.2460938 C34.3289637,29.4804699 34.0530876,29.7392564 33.7259375,30.0224609 C33.3987874,30.3056655 32.302607,31.204094 30.4373633,32.7177734 L28.7088477,30.5351562 L35.0076758,25.5839844 L37.8787695,25.5839844 L37.8787695,47 Z" fill="#322673" fill-rule="nonzero"></path>
                                 </g>
                             </g>
                         </g>
