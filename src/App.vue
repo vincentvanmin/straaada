@@ -93,9 +93,19 @@ export default {
 }
 
 @font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url(./assets/fonts/OpenSans-Semibold.ttf) format('truetype');
+}
+
+@font-face {
   font-family: 'Nunito';
   src: url(./assets/fonts/Nunito-Regular.ttf) format('truetype');
   font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Nunito-Regular';
+  src: url(./assets/fonts/Nunito-Regular.ttf) format('truetype');
 }
 
 @font-face {

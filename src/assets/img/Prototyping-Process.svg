@@ -27,14 +27,14 @@
                     </g>
                     <g id="1" transform="translate(408.000000, 67.000000)">
                         <path d="M54.8051547,0 C-31.2835726,96.3218061 -15.9502392,144.482709 100.805155,144.482709" id="Path-4" stroke="#FFFFFF" stroke-width="4"></path>
-                        <text id="Collect-your-resourc" font-family="Nunito-Medium, Nunito" font-size="30" font-weight="400" line-spacing="40" letter-spacing="-0.07089232" fill="#FFFFFF">
+                        <text id="Collect-your-resourc" font-family="Nunito-SemiBold, Nunito" font-size="30" font-weight="400" line-spacing="40" letter-spacing="-0.07089232" fill="#FFFFFF">
                             <tspan x="120.805155" y="141">Collect your</tspan>
                             <tspan x="120.805155" y="181">resources</tspan>
                         </text>
                     </g>
                     <g id="2" transform="translate(1011.000000, 67.000000)">
                         <path d="M54.8051547,0 C-31.2835726,96.3218061 -15.9502392,144.482709 100.805155,144.482709" id="Path-4-Copy" stroke="#4D0DB9" stroke-width="4"></path>
-                        <text id="Create-your-design" font-family="Nunito-Medium, Nunito" font-size="30" font-weight="400" line-spacing="40" letter-spacing="-0.07089232" fill="#322673">
+                        <text id="Create-your-design" font-family="Nunito-SemiBold, Nunito" font-size="30" font-weight="400" line-spacing="40" letter-spacing="-0.07089232" fill="#322673">
                             <tspan x="120.805155" y="141">Create your</tspan>
                             <tspan x="120.805155" y="181">design</tspan>
                         </text>
