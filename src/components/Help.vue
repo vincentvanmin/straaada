@@ -2,11 +2,11 @@
     <section id="help" name="help">
         <div class="subtitle">
             <h4>Need help?</h4>
-            <p class="description">If you have some trouble finding the rhythm in this step, <br>I made a video for you so you can seehow I go to work with Invision Freehand. <br> Get some free hints!</p>
+            <p class="description">If you have some trouble finding the rhythm in this step, make sure to check out this video so you can seehow a designer goes to work with Invision Freehand. Get some free hints!</p>
         </div>
         <div class="videobox">
             <div id="helpvideo">
-                <iframe width="560" height="349" src="https://www.youtube.com/embed/w5-cQ6mGAYQ" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="349" src="https://www.youtube.com/embed/lKPgRK0llO8" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
         <div class="buttons">

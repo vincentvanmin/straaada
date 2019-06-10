@@ -76,7 +76,7 @@ export default {
                     explenation: "For me, Dribbble offers you the best examples of all inspirational tools",
                     rating: 5,
                     ratingimg: require('../assets/img/Table-Rating-5.svg'),
-                    info: "",
+                    info: "Dribble is the first website I visit if I need any inspiration for my graphic designs. You can either search, filter or just scroll through featured items that were mostly posted by professional designers. Dribbble has a very wide variety in graphic designs, user interface designs and product designs. Against static user interfaces, you can also find beautiful animations and very nice kinds of typography.",
                     url: "https://dribbble.com/"
                 },
                 {
@@ -106,7 +106,7 @@ export default {
                     explenation: "I like the fact that you can also find graphical content designs agains UI Designs",
                     rating: 4,
                     ratingimg: require('../assets/img/Table-Rating-4.svg'),
-                    info: "",
+                    info: "Behance by Adobe is a well made inspirational website for either graphic designers and web designers. Make your way to the search icon on the top right corner and filter or search what you are looking for. If you check out the details of an item, you can scroll down and see how the designer made it, which tools where used, ... which may be useful for a further step in your design process.",
                     url: "https://www.behance.net/"
                 },
                 {
@@ -121,7 +121,7 @@ export default {
                     explenation: "All inspiration is brought to you by video content, a great positive!",
                     rating: 4,
                     ratingimg: require('../assets/img/Table-Rating-4.svg'),
-                    info: "",
+                    info: "UI Movement isn't really like the previous inspirational websites. On this site, you will mostly get inspired by wonderful animations you can use in your site. The best thing to do is safe the ones you really like so you can get back to them when you are ready to develop! If you are interested in weekly inspiration, you can subscribe to their newsletter for free.",
                     url: "https://uimovement.com/"
                 },
                 {
@@ -136,7 +136,7 @@ export default {
                     explenation: "A good chance to outstand other designers if you are confident about your concept",
                     rating: 3,
                     ratingimg: require('../assets/img/Table-Rating-3.svg'),
-                    info: "",
+                    info: "Last but not least is Awwwards. They feature the latest and the greatest websites all over the internet. You can not only look at a design, but you are also able to visit the sites and interact with it. This gives you the chance to experience the design yourself. ",
                     url: "https://www.awwwards.com/"
                 }
             ]
@@ -363,7 +363,7 @@ export default {
                     .number {
                         position: absolute;
                         bottom: 0;
-                        left: 65%;
+                        left: 64.5%;
                         width: 13%;
                     }
                 }
@@ -402,7 +402,7 @@ export default {
                         flex-direction: row;
                         font-family: 'Open Sans';
                         font-weight: normal;
-                        font-size: .9em;
+                        font-size: 1.1em;
                         line-height: 22px;
                         color: $text-color;
                         text-align: justify;

@@ -14,8 +14,9 @@
             </div>
             <div class="concept">
                 <div class="left">
-                    <img src="../assets/img/Placeholder-Wireframing.jpg" alt="How to wireframe on paper">
-                    <!-- <iframe src="" frameborder="0"></iframe> -->
+                    <div class="wireframingvideo">
+                        <iframe width="560" height="349" src="https://www.youtube.com/embed/PmmQjLqJQlY" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
                 <div class="right">
                     <div class="counter">
@@ -34,7 +35,7 @@
                             <p class="how">How do you think your site should look like? Lets start sketching!</p>
                         </div>
                         <div id="step3" class="step">
-                            <p class="what">Start explaining</p>
+                            <p class="what">Start explaining (Extra - UX)</p>
                             <p class="how">Describe why you put the content on a specific place on your site.</p>
                         </div>
                     </div>
@@ -47,8 +48,9 @@
             </div>
             <div class="concept">
                 <div class="left">
-                    <!-- <iframe src="" frameborder="0"></iframe> -->
-                    <img src="../assets/img/Placeholder-Freehand.jpg" alt="How to work with Freehand">
+                    <div class="wireframingvideo">
+                        <iframe width="560" height="349" src="https://www.youtube.com/embed/zd65qDvLZF0" frameborder="0" allowfullscreen></iframe>
+                    </div>
                     <a href="#" target="_blank" class="visitbuttonmobile">
                         <p>Visit website</p>
                         <div class="arrow"></div>
@@ -83,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" target="_blank" class="visitbutton">
+                    <a href="https://www.invisionapp.com/feature/freehand" target="_blank" class="visitbutton">
                         <p>Visit website</p>
                         <div class="arrow"></div>
                     </a>
@@ -258,12 +260,17 @@ export default {
                 width: 50%;
                 align-self: center;
 
-                iframe {
-                    width: 100%;
-                    margin: 0;
-                }
-                img {
-                    width: 100%;
+                .wireframingvideo {
+                    position: relative;
+                    padding-bottom: 56.25%; /* 16:9 */
+
+                    iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
 
                 .visitbuttonmobile {
@@ -503,7 +510,7 @@ export default {
             .ball {
                 flex-direction: row;
                 width: 28%;
-                background-color: $white-background;
+                background-color: $light-background;
                 border-radius: 50%;
                 box-shadow: 0px 0px 5px rgba(77, 13, 85, 0.20);
                 position: relative;

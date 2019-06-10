@@ -57,7 +57,7 @@
                         </td>
                         <td class="rating">
                             <p class="explenation">{{ tool.explenation }}</p>
-                            <img v-bind:src="tool.ratingimg" alt="This is my personal rating for this tool" class="number">
+                            <img v-bind:src="tool.ratingimg" alt="This is my personal rating for this tool" v-bind:id="'rating-' + tool.id" class="number">
                         </td>
                         <td class="open">
                             <img @click="toggle(tool.id)" :class="{ opened: opened.includes(tool.id) }" src="../assets/img/Chevron-Right.svg" alt="More info" class="chevron">
@@ -67,6 +67,10 @@
                                 <div class="video">
                                     <iframe width="560" height="349" v-bind:src="tool.video" frameborder="0" allowfullscreen></iframe>
                                 </div>
+                                <a v-bind:href="tool.url" target="_blank" class="visitbuttonmobile">
+                                    <p>Visit website</p>
+                                    <div class="arrow"></div>
+                                </a>
                             </div>
                             <div class="text">
                                 <p class="info">{{ tool.info }}</p>
@@ -373,8 +377,8 @@ export default {
                     explenation: "For me, Sketch offers you the best features of all design tools",
                     rating: 5,
                     ratingimg: require('../assets/img/Table-Rating-5.svg'),
-                    video: "https://www.youtube.com/embed/w5-cQ6mGAYQ",
-                    info: "",
+                    video: "https://www.youtube.com/embed/qywB0JHQeC4",
+                    info: "Sketch for Mac is my favourite design software of all time! You can do web, product or software design all in one app. Sketch is easy to use and contains a lot of customizations because it's open source. Download plugins or check their well-explained learning documentation on the website. Watch this tutorial to get into the first steps!",
                     url: "https://www.sketch.com/"
                 },
                 {
@@ -389,8 +393,8 @@ export default {
                     explenation: "Adobe created a wonderful tool, best alternative from Sketch if you’re not on Mac",
                     rating: 5,
                     ratingimg: require('../assets/img/Table-Rating-5.svg'),
-                    video: "https://www.youtube.com/embed/w5-cQ6mGAYQ",
-                    info: "",
+                    video: "https://www.youtube.com/embed/JttI6YpmPGI",
+                    info: "If you are not using a Mac (screw you), Adobe built a fantastic (free!) tool for you. Adobe XD (Experience Design) is a lightweight, easy to use design software to create your amazing interface design. With monthly updates, you're getting the newest functionalities all for free. Check it out now, watch the video for your first lesson.",
                     url: "https://www.adobe.com/products/xd.html"
                 },
                 {
@@ -405,7 +409,7 @@ export default {
                     explenation: "Great tool with a lot of features (animations incl.), you will have to get used to it",
                     rating: 4,
                     ratingimg: require('../assets/img/Table-Rating-4.svg'),
-                    video: "https://www.youtube.com/embed/w5-cQ6mGAYQ",
+                    video: "https://www.youtube.com/embed/v10t2azNaFs",
                     info: "Invision built an amazing platform, inspired by world’s best design teams. It’s an all-in-one application available for Mac and Windows. Turn your ideas into powerful, responsive and animated designs with the vecor-based capabilities. Collaborate with your team to finish the design and start building a prototype. I really recommend you to take a look!",
                     url: "https://www.invisionapp.com/studio"
                 },
@@ -414,22 +418,22 @@ export default {
                     logo: require('../assets/img/Figma.svg'),
                     name: "Figma",
                     description: "In-browser design app",
-                    price: "$12.00 /m",
-                    extra: "Free trial available",
+                    price: "Free",
+                    extra: "Premium v. available",
                     level: "Easy",
                     learningcurve: "Low learning curve",
                     explenation: "Working with Figma is really enjoyable, but it leaves some features behind",
                     rating: 4,
                     ratingimg: require('../assets/img/Table-Rating-4.svg'),
-                    video: "https://www.youtube.com/embed/w5-cQ6mGAYQ",
-                    info: "",
+                    video: "https://www.youtube.com/embed/jk1T0CdLxwU",
+                    info: "Did I just say 'In-browser design app'? Yes I did! Figma is a easy to use design application (/website) that runs all in your browser window. Also, it's completely free for individuals. Get yourself up and running in no-time and create beautiful wireframes, interfaces and prototypes! Watch the video where Jesse will take you through the first steps.",
                     url: "https://www.figma.com/"
                 },
                 {
                     id: 5,
                     logo: require('../assets/img/ProtoIO.svg'),
                     name: "ProtoIO",
-                    description: "In-browser design app",
+                    description: "Interface design app",
                     price: "$29.00 /m",
                     extra: "Free trial available",
                     level: "Easy",
@@ -437,8 +441,8 @@ export default {
                     explenation: "Great tool to create fast and easy working prototypes",
                     rating: 4,
                     ratingimg: require('../assets/img/Table-Rating-4.svg'),
-                    video: "https://www.youtube.com/embed/w5-cQ6mGAYQ",
-                    info: "",
+                    video: "https://www.youtube.com/embed/9dtWRECqJmk",
+                    info: "Proto IO isn't well known as a design application, but against creating great prototypes, you can acually create great designs aswell! Proto IO provides a 3 video tutorial to get you started with their software, I can recommend you watching it!",
                     url: "https://proto.io/"
                 },
                 {
@@ -453,25 +457,9 @@ export default {
                     explenation: "Framer is getting better and better, really worth a try!",
                     rating: 4,
                     ratingimg: require('../assets/img/Table-Rating-4.svg'),
-                    video: "https://www.youtube.com/embed/w5-cQ6mGAYQ",
-                    info: "",
+                    video: "https://www.youtube.com/embed/zAV6RIHswto",
+                    info: "Framer? What's that? Framer isn't like every other design software. If you're a developer, Framer might be your tool of choice. Prototyping in Framer is taken to the next level, because you can use actual React JS components to build amazing animations and deliver an extraordinary experience. Watch Athanasia's video tutorials to get started!",
                     url: "https://www.framer.com/"
-                },
-                {
-                    id: 7,
-                    logo: require('../assets/img/Marvel.svg'),
-                    name: "Marvel App",
-                    description: "All-in-one design tool",
-                    price: "Free",
-                    extra: "Paid versions available",
-                    level: "Easy",
-                    learningcurve: "Very low learning curve",
-                    explenation: "Marvel offers a great and easy to use tool, but for me personally it’s too basic",
-                    rating: 3,
-                    ratingimg: require('../assets/img/Table-Rating-3.svg'),
-                    video: "https://www.youtube.com/embed/w5-cQ6mGAYQ",
-                    info: "",
-                    url: "https://marvelapp.com/"
                 }
             ]
         }
@@ -612,6 +600,7 @@ export default {
                                 flex-direction: row;
                                 width: 75%;
                                 margin: 0;
+                                padding-right: 3%;
 
                                 a {
                                     font-family: 'Open Sans';
@@ -842,7 +831,7 @@ export default {
                         .number {
                             position: absolute;
                             bottom: 0;
-                            left: 65%;
+                            left: 64.5%;
                             width: 13%;
                         }
                     }
@@ -884,7 +873,6 @@ export default {
                             .video {
                                 position: relative;
                                 padding-bottom: 56.25%; /* 16:9 */
-                                padding-top: 25px;
 
                                 iframe {
                                     position: absolute;
@@ -893,6 +881,10 @@ export default {
                                     width: 100%;
                                     height: 100%;
                                 }
+                            }
+
+                            .visitbuttonmobile {
+                                display: none;
                             }
                         }
 
@@ -908,7 +900,7 @@ export default {
                                 width: 85%;
                                 font-family: 'Open Sans';
                                 font-weight: normal;
-                                font-size: .9em;
+                                font-size: 1.1em;
                                 line-height: 22px;
                                 color: $text-color;
                                 text-align: justify;
@@ -1042,6 +1034,68 @@ export default {
             }
 
             .dots {
+                display: none;
+            }
+        }
+
+        .design .tablebox table .tabledata .more {
+            .videobox .visitbuttonmobile {
+                margin-top: 20px;
+                width: 250px;
+                height: 40px;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-self: flex-end;
+                background-color: $action-color;
+                border: solid 3px $action-color;
+                border-radius: 20px;
+                text-decoration: none;
+
+                p {
+                    flex-direction: row;
+                    font-family: 'Open Sans';
+                    font-weight: normal;
+                    font-size: 20px;
+                    line-height: 36px;
+                    color: #ffffff;
+                    padding: 0 20px 0 0;
+                }
+
+                .arrow {
+                    flex-direction: row;
+                    width: 25px;
+                    margin: 7px 0;
+                    height: 100%;
+                    background-image: url(../assets/img/Button-Arrow.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+
+                &:hover {
+                    background-color: $light-background;
+                    transition: all .5s;
+
+                    p {
+                        color: $action-color;
+                        transition: all .5s;
+                    }
+
+                    .arrow {
+                        background-image: url(../assets/img/Button-Arrow-Active.svg);
+                        transition: all .5s;
+                        animation: hop 1s ease-out infinite;
+                    }
+
+                    @keyframes hop {
+                        0% { transform: translateX(0px) }
+                        40% { transform: translateX(5px) }
+                        100% { transform: translateX(0px) }
+                    }
+                }
+            }
+
+            .text .visitbutton {
                 display: none;
             }
         }

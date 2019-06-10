@@ -6,7 +6,7 @@
         </div>
         <div class="extratool">
             <div id="muzli">
-                <div class="ball">
+                <div id="muzliball" class="ball">
                     <div class="content">
                         <h5>Muzli</h5>
                         <p class="what">Design inspiration, news and trends, curated exactly to your tastes. Say hello to Muzli!</p>
@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="buttons">
-            <a id="viewbutton" @click="showVideo">View more</a>
+            <a id="viewbutton" @click="showContent">View more</a>
             <a id="continuebutton" href="#prototyping">Continue</a>
         </div>
     </section>
@@ -36,8 +36,9 @@ export default {
     name: 'more',
 
     methods: {
-        showVideo: function() {
+        showContent: function() {
             document.getElementById('muzli').style.height = "auto";
+            document.getElementById('muzliball').style.transform = "scale(1)";
             document.getElementById('viewbutton').style.display = "none";
         }
     }
@@ -84,6 +85,12 @@ export default {
             height: 0;
             overflow: hidden;
             transition: all 1s;
+
+            #muzliball {
+                transform: scale(0);
+                transition: all .5s;
+                transition-delay: .1s;
+            }
 
             .ball {
                 flex-direction: row;
