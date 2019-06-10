@@ -105,6 +105,11 @@ export default {
 }
 
 @font-face {
+  font-family: 'Nunito-SemiBold';
+  src: url(./assets/fonts/Nunito-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
     font-family: 'Nunito';
     src: url(./assets/fonts/Nunito-Light.ttf) format('truetype');
     font-weight: lighter;
