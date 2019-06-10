@@ -270,6 +270,8 @@ export default {
                         left: 0;
                         width: 100%;
                         height: 100%;
+
+                        box-shadow: 1px 2px 8px rgba(77, 13, 85, 0.20);
                     }
                 }
 

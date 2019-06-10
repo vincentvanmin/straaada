@@ -72,7 +72,7 @@
         <div class="timelapsebox">
             <div class="timelapse">
                 <img class="laptop" src="../assets/img/Laptop.png" alt="Building this website">
-                <video class="video" width="540" height="329" autoplay>
+                <video class="video" width="540" height="329" autoplay muted loop >
                     <source src="../assets/img/Timelapse.mp4" type="video/mp4">
                     <!-- <source src="../assets/img/Timelapse.ogg" type="video/ogg"> -->
                     <p>Your browser does not support this video.</p>
