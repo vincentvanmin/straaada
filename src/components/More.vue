@@ -329,5 +329,29 @@ export default {
             }
         }
     }
+
+    @media (max-width: 750px) {
+        .extratool #muzli .ball {
+            width: 50%;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .extratool #muzli {
+            .ball {
+                width: 65%;
+            }
+
+            .explenation {
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .extratool #muzli .ball {
+            width: 85%;
+        }
+    }
 }
 </style>

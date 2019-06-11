@@ -248,6 +248,10 @@ export default {
             }
         }
     }
+
+    @media (max-width: 640px) {
+        display: none;
+    }
 }
 
 

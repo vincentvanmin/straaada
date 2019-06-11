@@ -69,6 +69,9 @@
                 </g>
             </svg>
         </div>
+        <div class="mobileroad">
+            <img src="../assets/img/Road-Mobile.svg" alt="The road to a perfect UI Design">
+        </div>
         <div class="timelapsebox">
             <div class="timelapse">
                 <img class="laptop" src="../assets/img/Laptop.png" alt="Building this website">
@@ -166,6 +169,10 @@ export default {
         }
     }
 
+    .mobileroad {
+        display: none;
+    }
+
     .timelapsebox {
         position: absolute;
         right: -280px;
@@ -245,9 +252,46 @@ export default {
     }
 
     @media (max-width: 640px) {
+        min-height: auto;
+
         .headertext {
+            max-width: 80%;
+            padding-top: 80px;
+
+            h1 {
+                font-size: 5vw;
+            }
+
+            h2 {
+                width: 90%;
+                max-width: none;
+                padding-bottom: 0;
+            }
+        }
+
+        .road {
+            display: none;
+        }
+
+        .mobileroad {
+            display: block;
             width: 80%;
-            
+            margin: 0 auto;
+            padding: 50px 0 100px 0;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .timelapsebox {
+            display: none;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .headertext h1 {
+            font-size: 7vw;
         }
     }
 }

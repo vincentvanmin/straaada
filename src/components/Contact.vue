@@ -406,12 +406,31 @@ export default {
 
                             .ratingoption {
                                 width: 30%;
+                                height: auto;
+
+                                label {
+                                    height: auto;
+                                }
                             }
                         }
                     }
                 }
             }
         }
+    }
+
+    @media (max-width: 480px) {
+        padding-bottom: 100px;
+        
+        .formbox {
+            padding-top: 50px;
+
+            .container .row .col form .formfields .inputrating {
+                .ratingoption {
+                    width: 100%;
+                }
+            }
+        } 
     }
 }
 </style>

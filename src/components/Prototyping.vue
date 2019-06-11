@@ -1278,5 +1278,99 @@ export default {
             }
         }
     }
+
+    @media (max-width: 640px) {
+        .titlebox {
+            position: relative;
+            padding-bottom: 20%;
+
+            .big-number {
+                font-size: 80px;
+                line-height: 80px;
+                width: 25%;
+            }
+
+            .title {
+                width: 75%;
+                
+                h3 {
+                    margin: 0;
+                }
+
+                .main-description {
+                    position: absolute;
+                    left: 0;
+                    top: 55%;
+                    width: 100%;
+                }
+            }
+        }
+
+        .process {
+            display: none;
+        }
+
+        .design {
+            padding: 0;
+
+            .subtitle {
+                display: none;
+            }
+
+            .tablebox table .tabledata .tool {
+                .logo {
+                    display: none;
+                }
+
+                .namebox {
+                    width: 100%;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .titlebox {
+            padding-bottom: 40%;
+
+            .big-number {
+                width: 30%;
+            }
+
+            .title {
+                width: 70%;
+
+                .main-description {
+                    top: 45%;
+                }
+            }
+        }
+
+        .design .tablebox table .tabledata {
+            .tool {
+                width: 50%;
+            }
+            .pricing {
+                width: 20%;
+
+                .extra {
+                    display: none;
+                }
+            }
+
+            .difficulty {
+                width: 20%;
+
+                .learningcurve {
+                    display: none;
+                }
+            }
+
+            .open {
+                width: 10%;
+            }
+        }
+    }
 }
 </style>

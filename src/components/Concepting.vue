@@ -821,5 +821,61 @@ export default {
             }
         }
     }
+
+    @media (max-width: 640px) {
+        .titlebox {
+            position: relative;
+            padding-bottom: 20%;
+
+            .big-number {
+                font-size: 80px;
+                line-height: 80px;
+                width: 20%;
+            }
+
+            .title {
+                width: 80%;
+                
+                h3 {
+                    margin: 0;
+                }
+
+                .main-description {
+                    position: absolute;
+                    left: 0;
+                    top: 55%;
+                    width: 100%;
+                }
+            }
+        }
+
+        .more-tools {
+            display: none;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .titlebox {
+            .big-number {
+                width: 30%;
+            }
+
+            .title {
+                width: 70%;
+            }
+        }
+
+        .option .concept {
+            .right {
+                .counter {
+                    max-width: 20%;
+                }
+
+                .steps {
+                    width: 80%;
+                }
+            }
+        }
+    }
 }
 </style>

@@ -359,24 +359,22 @@ html {
   @media (max-width: 640px) {
     /* hamburger */
     header {
-      position: relative;
-      top: 0;
-      
       #navbar {
-        position: relative;
-
         .navbar-nav {
+          position: relative;
 
           .menu-btn {
             display: none;
 
             &:checked ~ .nav {
               position: absolute;
-              left: 0;
+              right: 0;
               top: 60px;
-              width: 100%;
-              height: 180px !important;
-              transition: all .5s;
+              width: 100vw;
+              height: 190px !important;
+              padding-bottom: 10px;
+              margin: 0;
+              transition: height .5s ease-out;
               background-color: $light-background;
               box-shadow: 0px 4px 4px rgba(77, 13, 85, 0.25);
 
@@ -450,7 +448,7 @@ html {
           .nav {
             clear: both;
             height: 0;
-            transition: all .5s ease-out;
+            transition: height .5s ease-out;
             overflow: hidden;
 
             .nav-item {
@@ -459,6 +457,12 @@ html {
           }
         }         
       }
+    }
+  }
+
+  @media (max-height: 480px) {
+    header {
+      position: static;
     }
   }
 }
