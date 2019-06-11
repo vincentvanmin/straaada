@@ -22,7 +22,7 @@ export default {
 
     methods: {
         showHelpVideo: function() {
-            document.getElementById('helpvideo').style.padding = "25px 0 56.25% 0";
+            document.getElementById('helpvideo').style.padding = "0 0 56.25% 0";
             document.getElementById('watch-helpvideo-button').style.display = "none";
         },
 
@@ -137,6 +137,21 @@ export default {
     @media (max-width: 960px) {
         .videobox {
             width: 80%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .buttons {
+            flex-wrap: wrap;
+
+            a {
+                width: 60%;
+                margin: 0 auto;
+
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+            }
         }
     }
 }

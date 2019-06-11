@@ -352,6 +352,19 @@ export default {
         .extratool #muzli .ball {
             width: 85%;
         }
+
+        .buttons {
+            flex-wrap: wrap;
+
+            a {
+                width: 60%;
+                margin: 0 auto;
+
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
     }
 }
 </style>
