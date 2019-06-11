@@ -243,5 +243,12 @@ export default {
             transform: scale(.4);
         }
     }
+
+    @media (max-width: 640px) {
+        .headertext {
+            width: 80%;
+            
+        }
+    }
 }
 </style>

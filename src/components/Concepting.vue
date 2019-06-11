@@ -551,11 +551,13 @@ export default {
                         display: flex;
                         justify-content: space-between;
                         flex-wrap: nowrap;
+                        width: 100%;
                         padding: 10% 10% 12% 10%;
 
                         img {
                             flex-direction: row;
                             width: 30%;
+                            max-height: 40px;
                         }
                     }
 

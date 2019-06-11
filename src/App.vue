@@ -7,6 +7,8 @@
           <a href="#app" class="name">Straaada</a>
         </div>
         <scrollactive class="navbar-nav" active-class="-active">
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
           <ul class="nav">
             <li class="nav-item"><a class="scrollactive-item" href="#concepting">Concepting</a></li>
             <li class="nav-item"><a class="scrollactive-item" href="#inspiration">Inspiration</a></li>
@@ -254,6 +256,10 @@ html {
         flex-wrap: nowrap;
         width: 70%;
 
+        .menu-icon, .menu-btn {
+          display: none;
+        }
+
         @media (max-width: 960px) {
           width: 80%;
         }
@@ -346,6 +352,112 @@ html {
 
       img {
         width: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    /* hamburger */
+    header {
+      position: relative;
+      top: 0;
+      
+      #navbar {
+        position: relative;
+
+        .navbar-nav {
+
+          .menu-btn {
+            display: none;
+
+            &:checked ~ .nav {
+              position: absolute;
+              left: 0;
+              top: 60px;
+              width: 100%;
+              height: 180px !important;
+              transition: all .5s;
+              background-color: $light-background;
+              box-shadow: 0px 4px 4px rgba(77, 13, 85, 0.25);
+
+              .nav-item {
+                display: block;
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+              }
+            }
+
+            &:checked ~ .menu-icon {
+              margin-right: 20px;
+
+              .navicon {
+                background: transparent;
+
+                &:before {
+                  transform: rotate(-45deg);
+                }
+
+                &:after {
+                  transform: rotate(45deg);
+                }
+              }
+            } 
+
+            &:checked ~ .menu-icon:not(.steps) .navicon:before,
+            &:checked ~ .menu-icon:not(.steps) .navicon:after {
+              top: 0;
+            }
+          }
+
+          .menu-icon {
+            flex-direction: row;
+            cursor: pointer;
+            display: inline-block !important;
+            padding: 28px 20px;
+            position: relative;
+            user-select: none;
+            margin: 0;
+
+            .navicon {
+              background: $text-color;
+              display: block;
+              height: 2px;
+              position: relative;
+              transition: background .2s ease-out;
+              width: 18px;
+
+              &:before, &:after {
+                background: $text-color;
+                content: '';
+                display: block;
+                height: 100%;
+                position: absolute;
+                transition: all .2s ease-out;
+                width: 100%;
+              }
+
+              &:before {
+                top: 5px;
+              }
+
+              &:after {
+                top: -5px;
+              }
+            }
+          }
+
+          .nav {
+            clear: both;
+            height: 0;
+            transition: all .5s ease-out;
+            overflow: hidden;
+
+            .nav-item {
+              display: none;
+            }
+          }
+        }         
       }
     }
   }
