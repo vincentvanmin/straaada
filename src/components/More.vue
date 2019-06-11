@@ -2,7 +2,7 @@
     <section id="more" name="more">
         <div class="subtitle">
             <h4>More inspiration?</h4>
-            <p class="description">Muzli will give you inspiration through your daily routines. Everytime <br> you open a new tab, you will get inspired with the most fresh, slik and modern designs <br> from the best designers from all over the world.</p>
+            <p class="description">Muzli will give you inspiration through your daily routines. Everytime you open a new tab, you will get inspired with the most fresh, slik and modern designs from the best designers from all over the world.</p>
         </div>
         <div class="extratool">
             <div id="muzli">
@@ -62,7 +62,7 @@ export default {
 
         .description {
             padding-top: 30px;
-            width: 70%;
+            width: 60%;
             margin: 0 auto;
             font-family: 'Open Sans';
             font-weight: normal;
@@ -75,7 +75,7 @@ export default {
 
     .extratool {
         width: 75%;
-        margin-left: 12.5%;
+        margin: 0 auto;
 
         #muzli {
             display: flex;
@@ -159,8 +159,13 @@ export default {
                 align-items: center;
 
                 > p {
-                    text-align: right;
+                    text-align: justify;
+                    text-align-last: right;
                     width: 100%;
+                    font-family: 'Open Sans';
+                    font-weight: normal;
+                    font-size: 1.1em;
+                    line-height: 24px;
                 }
 
                 .visitbutton {
@@ -232,6 +237,7 @@ export default {
             flex-direction: row;
             display: block;
             width: 18%;
+            min-width: 180px;
             height: 40px;
             margin: 0 15px;
             text-decoration: none;
@@ -287,6 +293,41 @@ export default {
                 padding-left: 10%;
             }
         } 
+    }
+
+    @media (max-width: 960px) {
+        .subtitle .description {
+            width: 70%;
+        }
+
+        .extratool {
+            width: 80%;
+            justify-content: space-between;
+
+            #muzli {
+                flex-wrap: wrap;
+
+                .ball {
+                    width: 40%;
+                    margin: 0 auto;
+                }
+
+                .explenation {
+                    padding-top: 50px;
+                    padding-left: 0;
+                    width: 100%;
+                    justify-content: flex-start;
+
+                    p {
+                        text-align-last: left;
+                    }
+
+                    .visitbutton {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
     }
 }
 </style>

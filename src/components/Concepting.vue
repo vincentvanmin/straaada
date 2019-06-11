@@ -692,6 +692,11 @@ export default {
             .title {
                 width: calc(70% + 20px);
                 padding-left: 20px;
+                padding-right: 0;
+
+                .main-description {
+                    text-align: justify;
+                }
             }
 
             .dots {
@@ -709,8 +714,109 @@ export default {
         }
 
         .more-tools .balls .ball .content {
-            h5 {padding-top: 8%;}
-            .what {padding-top: 2%;}
+            h5 {
+                padding-top: 8%;
+            }
+            .what {
+                padding-top: 2%;
+            }
+        }
+    }
+
+    @media (max-width: 960px) {
+        .titlebox {
+            width: 80%;
+
+            .big-number {
+                width: 35%;
+
+                @media (max-width: 800px) {
+                    width: 40%;
+                }
+            }
+        }
+
+        .option {
+            width: 80%;
+            .concept {
+                flex-wrap: wrap;
+
+                .left {
+                    width: 100%;
+
+                    .visitbuttonmobile {
+                        display: none;
+                    }
+                }
+
+                .right {
+                    width: 100%;
+                    padding: 50px 0 0 0;
+                    justify-content: space-between;
+                    min-height: 280px;
+
+                    .counter {
+                        img {
+                            width: 80%;
+                        }
+
+                        .line {
+                            width: calc(40% + 2px);
+                        }
+                    }
+
+                    .steps {
+                        padding-left: 20px;
+                    }
+
+                    .description {
+                        padding-bottom: 20px;
+                    }
+
+                    .icons {
+                        padding-bottom: 40px;
+                    }
+
+                    .visitbutton {
+                        display: flex;
+                    }
+                }
+            }
+        }
+
+        .more-tools {
+            width: 80%;
+
+            .subtitle .description {
+                width: 70%;
+            }
+
+            .balls {
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .ball {
+                    width: 45%;
+
+                    .content {
+                        h5 {
+                            padding-top: 12%;
+                        }
+
+                        .icons {
+                            padding: 10% 10% 12% 10%;
+
+                            @media (max-width: 750px) {
+                                padding: 6% 10% 8% 10%;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        margin: 0 auto;
+                    }
+                }
+            }
         }
     }
 }

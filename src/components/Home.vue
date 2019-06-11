@@ -209,5 +209,39 @@ export default {
             transform: scale(.7);
         }
     }
+
+    @media (max-width: 960px) {
+        .headertext {
+            margin-left: 10%;
+            max-width: 50%;
+
+            h1 {
+                font-size: 3.5vw;
+            }
+        }
+
+        .road {
+            width: 80%;
+            left: 10%;
+            top: 80px;
+        }
+
+        .timelapsebox {
+            top: 270px;
+            transform: scale(.6);
+        }
+    }
+
+    @media (max-width: 800px) {
+        .timelapsebox {
+            transform: scale(.5);
+        }
+    }
+
+    @media (max-width: 740px) {
+        .timelapsebox {
+            transform: scale(.4);
+        }
+    }
 }
 </style>

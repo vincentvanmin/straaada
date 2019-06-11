@@ -7,9 +7,9 @@
         </div>
 
         <div id="form" class="formbox">
-            <mdb-container style="padding: 0;">
-                <mdb-row>
-                    <mdb-col>
+            <mdb-container style="padding: 0; width: 100%;">
+                <mdb-row style="padding: 0; margin: 0;">
+                    <mdb-col style="padding: 0; margin: 0;">
                         <form @submit.prevent="handleSubmit" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="w-100">
                             <p class="hidden" style="display: none;">
                                 <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
@@ -27,7 +27,7 @@
                                     </select>
                                 </div>
                                 <div class="inputrating">
-                                    <p>How would you rate Straaada?</p>
+                                    <p style="width: 100%;">How would you rate Straaada?</p>
                                     <div class="ratingoption">
                                         <mdb-input type="radio" id="wow" name="rating" radioValue="Wow" value="Wow" v-model="form.rating" class="radiobutton" required /><label for="wow">Wow! Supercool :)</label>
                                     </div>
@@ -60,7 +60,7 @@
 </template>
 
 <script>
-import { mdbInput, mdbBtn, mdbContainer, mdbRow, mdbCol, mdbTextarea } from 'mdbvue';
+import { mdbInput, mdbContainer, mdbRow, mdbCol, mdbTextarea } from 'mdbvue';
 
 export default {
     name: 'contact',
@@ -77,12 +77,7 @@ export default {
     }),
 
     components: {
-      mdbInput,
-      mdbBtn,
-      mdbContainer,
-      mdbRow,
-      mdbCol,
-      mdbTextarea
+      mdbInput, mdbContainer, mdbRow, mdbCol, mdbTextarea
     },
 
     methods: {
@@ -371,6 +366,49 @@ export default {
                 } 40% { 
                     -webkit-transform: scale(1.0);
                     transform: scale(1.0);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 960px) {
+        .subtitle {
+            width: 80%;
+
+            .description {
+                width: 100%;
+            }
+        }
+
+        .formbox {
+            width: 80%;
+
+            .container {
+                margin: 0 auto;
+
+                .row {
+                    width: 100%;
+
+                    .col form .formfields {
+                        .inputname, .inputemail, .inputurl, .inputreason, .inputrating {
+                            width: 100%;
+                            margin: 1rem 0;
+                        }
+
+                        .collapsed {
+                            width: 100%;
+                        }
+
+                        .inputrating {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+
+                            .ratingoption {
+                                width: 30%;
+                            }
+                        }
+                    }
                 }
             }
         }

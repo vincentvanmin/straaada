@@ -64,7 +64,7 @@ export default {
 
     .videobox {
         width: 75%;
-        margin-left: 12.5%;
+        margin: 0 auto;;
 
         #tutorialvideo {    
             position: relative;
@@ -96,6 +96,7 @@ export default {
             flex-direction: row;
             display: block;
             width: 18%;
+            min-width: 180px;
             height: 40px;
             margin: 0 15px;
             text-decoration: none;
@@ -130,6 +131,12 @@ export default {
                 color: #ffffff;
                 transition: all .5s;
             }
+        }
+    }
+
+    @media (max-width: 960px) {
+        .videobox {
+            width: 80%;
         }
     }
 }

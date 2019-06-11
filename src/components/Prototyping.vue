@@ -1020,7 +1020,6 @@ export default {
             #Videos {
                 margin-top: 38%;
             }
-
         } 
     }
 
@@ -1033,6 +1032,11 @@ export default {
             .title {
                 width: calc(70% + 40px);
                 padding-left: 40px;
+                padding-right: 0;
+
+                .main-description {
+                    text-align: justify;
+                }
             }
 
             .dots {
@@ -1099,6 +1103,178 @@ export default {
 
             .text .visitbutton {
                 display: none;
+            }
+        }
+    }
+
+    @media (max-width: 960px) {
+        .titlebox {
+            width: 80%;
+
+            .big-number {
+                width: 35%;
+
+                @media (max-width: 800px) {
+                    width: 40%;
+                }
+            }
+        }
+
+        .process {
+            background-image: url(../assets/img/Prototyping-Process-Mobile.svg);
+
+            .balls {
+                width: 80%;
+
+                .ball {
+                    width: 48%;
+
+                    .content {
+                        h4 {
+                            padding-top: 8%;
+                            margin-bottom: 0;
+                        }
+
+                        .resources {
+                            padding: 0 17% 10% 17%;
+
+                            .resource {
+                                h5 {
+                                    width: 87%;
+
+                                    a {
+                                        font-size: .9em;
+                                    }
+                                } 
+
+                                .properties {
+                                    width: 13%;
+
+                                    .pricing {
+                                        width: 100%;
+                                    }
+
+                                    .rating {
+                                        display: none;
+                                    }
+                                } 
+                            }
+                        }
+                    }
+                }
+
+                #Photos, #Icons {
+                    .content .resources .resource {
+                        &:nth-child(3) {
+                            display: none;
+                        }
+
+                        @media (max-width: 800px) {
+                            &:nth-child(4) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                #Icons {
+                    top: 18%;
+                }
+
+                #Illustrations {
+                    left: 19%;
+                    top: 39.5%;
+
+                    @media (max-width: 800px) {
+                        .content .resources .resource {
+                            &:nth-child(3) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                #Videos {
+                    margin-top: 50%;
+
+                    @media (max-width: 800px) {
+                        .content .resources .resource {
+                            &:nth-child(3) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+
+                #Fonts {
+                    right: 0;
+                    bottom: 6%;
+                }
+            }
+        } 
+
+        .design {
+            width: 80%;
+
+            .tablebox {
+                table {
+                    .tableheader {
+                        padding: 10px 0;
+                        
+                        th:first-child {
+                            width: 40%;
+                        }
+
+                        th:nth-child(2), th:nth-child(3) {
+                            width: 27.5%;
+                        }
+
+                        th:last-child {
+                            display: none;
+                        }
+                    }
+
+                    .tabledata {
+                        .tool {
+                            width: 40%;
+                        }
+                        .pricing, .difficulty {
+                            width: 27.5%;
+                        }
+                        .rating {
+                            display: none;
+                        }
+
+                        @media (max-width: 800px) {
+                            .more {
+                                flex-wrap: wrap;
+
+                                .videobox {
+                                    width: 100%;
+
+                                    .visitbuttonmobile {
+                                        display: none;
+                                    }
+                                }
+
+                                .text {
+                                    width: 100%;
+                                    padding-top: 50px;
+                                    padding-left: 0;
+                                    justify-content: flex-start;
+
+                                    .info {
+                                        width: 100%;
+                                    }
+
+                                    .visitbutton {
+                                        display: flex;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

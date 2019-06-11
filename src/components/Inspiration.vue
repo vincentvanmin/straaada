@@ -503,10 +503,64 @@ export default {
             .title {
                 padding-right: 40px;
                 width: 70%;
+                padding-left: 0;
+
+                .main-description {
+                    text-align: justify;
+                    text-align-last: right;
+                }
             }
 
             .dots {
                 display: none;
+            }
+        }
+    }
+
+    @media (max-width: 960px) {
+        .titlebox {
+            width: 80%;
+            
+            .big-number {
+                width: 35%;
+
+                @media (max-width: 800px) {
+                    width: 40%;
+                }
+            }
+        }
+
+        .tablebox {
+            width: 80%;
+
+            table {
+                .tableheader {
+                    padding: 10px 0;
+                    
+                    th:first-child {
+                        width: 40%;
+                    }
+
+                    th:nth-child(2), th:nth-child(3) {
+                        width: 27.5%;
+                    }
+
+                    th:last-child {
+                        display: none;
+                    }
+                }
+
+                .tabledata {
+                    .tool {
+                        width: 40%;
+                    }
+                    .pricing, .difficulty {
+                        width: 27.5%;
+                    }
+                    .rating {
+                        display: none;
+                    }
+                }
             }
         }
     }

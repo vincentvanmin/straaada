@@ -132,12 +132,25 @@ html {
 #app {
   font-family: 'Open Sans', sans-serif;
   color: $text-color;
-  background-image: url('./assets/img/Mountain.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
-  z-index: -5;
+  // background-image: url('./assets/img/Mountain.png');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: top;
+  // background-attachment: fixed;
+  // z-index: -5;
+
+  &::before{
+        background-image:url('./assets/img/Mountain.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        display: block;
+        content: ' ';
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index:-5;
+    }
 
   header {
     height: 80px; /* 60 + 20px */
@@ -201,6 +214,10 @@ html {
         display: flex;
         justify-content: flex-start;
 
+        @media (max-width: 960px) {
+          width: 20%;
+        }
+
         .icon {
           flex-direction: row;
           text-decoration: none;
@@ -223,6 +240,10 @@ html {
           font-size: 1.5em;
           color: $red;
           line-height: 30px;
+
+          @media (max-width: 960px) {
+            display: none;
+          }
         }
       }
 
@@ -232,6 +253,10 @@ html {
         justify-content: flex-end;
         flex-wrap: nowrap;
         width: 70%;
+
+        @media (max-width: 960px) {
+          width: 80%;
+        }
 
         .nav {
           list-style: none;
