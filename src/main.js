@@ -14,7 +14,8 @@ import SortedTablePlugin from "vue-sorted-table";
 import VueScrollactive from "vue-scrollactive";
 
 Vue.use(VueAnalytics, {
-  id: 'UA-141900052-1'
+  id: 'UA-141900052-1',
+  checkDuplicatedScript: true
 })
 
 Vue.use(SortedTablePlugin);
