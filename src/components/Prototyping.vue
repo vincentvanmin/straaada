@@ -15,7 +15,7 @@
                         <h4>{{ball.name}}</h4>
                         <div class="resources">
                             <div class="resource" v-bind:key="resource.id" v-for="resource in ball.resources">
-                                <h5><a v-bind:href="resource.url" target="_blank">{{resource.name}}</a></h5>
+                                <h5><a v-bind:href="resource.url" target="_blank" rel="noreferrer noopener">{{resource.name}}</a></h5>
                                 <div class="properties">
                                     <img v-bind:src="resource.priceimg" v-bind:alt="resource.price" class="pricing">
                                     <img v-bind:src="resource.ratingimg" alt="My personal rating" class="rating">
@@ -79,7 +79,7 @@
                             </div>
                             <div class="text">
                                 <p class="info">{{ tool.info }}</p>
-                                <a v-bind:href="tool.url" target="_blank" class="visitbutton">
+                                <a v-bind:href="tool.url" target="_blank" class="visitbutton" rel="noreferrer noopener">
                                     <p>Visit website</p>
                                     <div class="arrow"></div>
                                 </a>
@@ -1414,6 +1414,10 @@ export default {
                     .mobilelevel {
                         padding: 0 4%;
                     }
+                }
+
+                .more .visitbutton {
+                    margin: 0 auto 20px auto;
                 }
 
                 .open {

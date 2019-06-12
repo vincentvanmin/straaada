@@ -8,7 +8,7 @@
             <div id="muzli">
                 <div id="muzliball" class="ball">
                     <div class="content">
-                        <h5><a href="https://muz.li/" target="_blank">Muzli</a></h5>
+                        <h5><a href="https://muz.li/" target="_blank" rel="noreferrer noopener">Muzli</a></h5>
                         <p class="what">Design inspiration, news and trends, curated exactly to your tastes. Say hello to Muzli!</p>
                         <div class="logo">
                             <img src="../assets/img/Muzli.svg" alt="Muzli">
@@ -17,7 +17,7 @@
                 </div>
                 <div class="explenation">
                     <p>Discover the best web design inspiration, best websites, best logos, web trends, best mobiles sites and applications, minimalist websites, brutalist websites, innovative illustrations, design features, unique websites, photography projects, and visual art, as well as opinions and articles from design experts across the web and around the world.</p>
-                    <a href="https://muz.li/" target="_blank" class="visitbutton">
+                    <a href="https://muz.li/" target="_blank" class="visitbutton" rel="noreferrer noopener">
                         <p>Visit website</p>
                         <div class="arrow"></div>
                     </a>

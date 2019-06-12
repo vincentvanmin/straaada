@@ -152,7 +152,7 @@ html {
   // z-index: -5;
 
   &::before{
-    background-image:url('./assets/img/Mountain.png');
+    background-image:url('./assets/img/Mountain.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;

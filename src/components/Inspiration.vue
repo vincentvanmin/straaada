@@ -46,7 +46,7 @@
                     </td>
                     <td class="more" v-if="opened.includes(tool.id)">
                         <p class="info">{{ tool.info }}</p>
-                        <a v-bind:href="tool.url" target="_blank" class="visitbutton">
+                        <a v-bind:href="tool.url" target="_blank" class="visitbutton" rel="noreferrer noopener">
                             <p>Visit website</p>
                             <div class="arrow"></div>
                         </a>
@@ -712,6 +712,10 @@ export default {
 
                 .open {
                     width: 10%;
+                }
+
+                .more .visitbutton {
+                    margin: 0 auto 20px auto;
                 }
             }
         } 

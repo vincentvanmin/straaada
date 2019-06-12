@@ -85,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="https://www.invisionapp.com/feature/freehand" target="_blank" class="visitbutton">
+                    <a href="https://www.invisionapp.com/feature/freehand" target="_blank" class="visitbutton" rel="noreferrer noopener">
                         <p>Visit website</p>
                         <div class="arrow"></div>
                     </a>
@@ -107,7 +107,7 @@
                             <img v-bind:src="tool.levelimg" v-bind:alt="tool.level">
                             <img v-bind:src="tool.ratingimg" v-bind:alt="tool.rating">
                         </div>
-                        <a v-bind:href="tool.url" target="_blank" class="visit-website-button">Visit website</a>
+                        <a v-bind:href="tool.url" target="_blank" class="visit-website-button" rel="noreferrer noopener">Visit website</a>
                     </div>
                 </div>
             </div>
@@ -887,6 +887,10 @@ export default {
                     img {
                         width: 35%;
                     }
+                }
+
+                .visitbutton {
+                    margin: 0 auto;
                 }
             }
         }
