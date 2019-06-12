@@ -68,10 +68,13 @@ export default {
   },
 
   methods: {
-        closenav() {
-            document.getElementById('menu-btn').checked = false;
-        }
+    closenav() {
+        document.getElementById('menu-btn').checked = false;
+    },
+    track () {
+      this.$ga.page('/')
     }
+  }
 }
 
 </script>

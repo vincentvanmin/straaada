@@ -1,5 +1,7 @@
 import Vue from 'vue';
 
+import VueAnalytics from 'vue-analytics'
+
 import 'bootstrap-css-only/css/bootstrap.min.css'; 
 import 'mdbvue/build/css/mdb.css';
 
@@ -11,6 +13,9 @@ import 'aos/dist/aos.css';
 import SortedTablePlugin from "vue-sorted-table";
 import VueScrollactive from "vue-scrollactive";
 
+Vue.use(VueAnalytics, {
+  id: 'UA-141900052-1'
+})
 
 Vue.use(SortedTablePlugin);
 Vue.use(VueScrollactive);
