@@ -14,7 +14,7 @@
             </div>
             <div class="concept">
                 <div class="left">
-                    <div class="wireframingvideo">
+                    <div data-aos="fade-right" class="wireframingvideo">
                         <iframe width="560" height="349" src="https://www.youtube.com/embed/PmmQjLqJQlY" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
             </div>
             <div class="concept">
                 <div class="left">
-                    <div class="wireframingvideo">
+                    <div data-aos="fade-right" class="wireframingvideo">
                         <iframe width="560" height="349" src="https://www.youtube.com/embed/zd65qDvLZF0" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <a href="#" target="_blank" class="visitbuttonmobile">
@@ -98,7 +98,7 @@
                 <p class="description">Below, you can find 3 more tools that can do the job easily, but I still recommend you to use Freehand</p>
             </div>
             <div class="balls">
-                <div class="ball" v-bind:key="tool.id" v-for="tool in tools">
+                <div data-aos="fade-up" class="ball" v-bind:key="tool.id" v-for="tool in tools">
                     <div class="content">
                         <h5>{{tool.name}}</h5>
                         <p class="what">{{tool.description}}</p>

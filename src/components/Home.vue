@@ -4,7 +4,7 @@
             <h1>Start building your website with a stunning design</h1>
             <h2>Create your own web pages using this simple 3-step process. You will be reached all the tools needed to complete a perfect UI Design.</h2>
         </div>
-        <div class="road">
+        <div data-aos="fade-up" data-aos-delay="500" class="road">
             <svg width="1140px" height="604px" viewBox="0 0 1140 604" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="Strada" transform="translate(-150.000000, -100.000000)">

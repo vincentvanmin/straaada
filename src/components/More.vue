@@ -25,8 +25,8 @@
             </div>
         </div>
         <div class="buttons">
-            <a id="viewbutton" @click="showContent">View more</a>
-            <a id="continuebutton" href="#prototyping">Continue</a>
+            <a data-aos="fade-right" id="viewbutton" @click="showContent">View more</a>
+            <a data-aos="fade-left" id="continuebutton" href="#prototyping">Continue</a>
         </div>
     </section>
 </template>

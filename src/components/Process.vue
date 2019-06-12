@@ -5,7 +5,7 @@
                 <div class="step">
                     <h3>Concepting</h3>
                     <p>Building your site on a great concept is really important, that’s why we will draw the structure of your website first! This step will assure a great user experience.</p>
-                    <img src="../assets/img/Process-Concepting-IMG.jpg" alt="How to build your concept">
+                    <img data-aos="fade-up" data-aos-offset="-100" src="../assets/img/Process-Concepting-IMG.jpg" alt="How to build your concept">
                 </div>
                 <a class="more" href="#concepting">
                     <img class="more-ball" src="../assets/img/More-Ball.svg" alt="Go to Concepting">
@@ -19,7 +19,7 @@
                 <div class="step">
                     <h3>Inspiration</h3>
                     <p>Please don’t think you are the best designer from your first project. Get help from experienced designers and build your idea on their base. Visit the greatest inspirational websites!</p>
-                    <img src="../assets/img/Process-Inspiration-IMG.jpg" alt="How to get inspiration">
+                    <img data-aos="fade-down" data-aos-offset="-100" src="../assets/img/Process-Inspiration-IMG.jpg" alt="How to get inspiration">
                 </div>
                 <a class="more" href="#inspiration">
                     <img class="more-ball" src="../assets/img/More-Ball.svg" alt="Go to Inspiration">
@@ -33,7 +33,7 @@
                 <div class="step">
                     <h3>Prototyping</h3>
                     <p>Let’s start designing a Hi-Fi user interface. Based on the inspiration you got from the privious step, you will create a beautiful and clickable mockup to show your team!</p>
-                    <img src="../assets/img/Process-Prototyping-IMG.jpg" alt="How to build your prototype">
+                    <img data-aos="fade-up" data-aos-offset="-100" src="../assets/img/Process-Prototyping-IMG.jpg" alt="How to build your prototype">
                 </div>
                 <a class="more" href="#prototyping">
                     <img class="more-ball" src="../assets/img/More-Ball.svg" alt="Go to Prototyping">

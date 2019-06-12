@@ -10,8 +10,8 @@
             </div>
         </div>
         <div class="buttons">
-            <a id="watch-helpvideo-button" @click="showHelpVideo">Watch video</a>
-            <a id="continue-to-inspiration-button" href="#inspiration">Continue</a>
+            <a data-aos="fade-right" id="watch-helpvideo-button" @click="showHelpVideo">Watch video</a>
+            <a data-aos="fade-left" id="continue-to-inspiration-button" href="#inspiration">Continue</a>
         </div>
     </section>
 </template>

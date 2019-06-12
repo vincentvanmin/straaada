@@ -133,7 +133,6 @@ html {
 
 #app {
   max-width: 100vw;
-  overflow: hidden;
   font-family: 'Open Sans', sans-serif;
   color: $text-color;
   // background-image: url('./assets/img/Mountain.png');
@@ -144,17 +143,17 @@ html {
   // z-index: -5;
 
   &::before{
-        background-image:url('./assets/img/Mountain.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-        display: block;
-        content: ' ';
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        z-index:-5;
-    }
+    background-image:url('./assets/img/Mountain.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: block;
+    content: ' ';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index:-5;
+  }
 
   header {
     height: 80px; /* 60 + 20px */
@@ -310,6 +309,7 @@ html {
 
   .wrapper {
     margin-top: -20px;
+    overflow: hidden;
   }
 
   footer {
@@ -359,6 +359,12 @@ html {
   }
 
   @media (max-width: 640px) {
+    /* background */
+    &::before{
+      background-size: cover;
+      background-position: center;
+    }
+
     /* hamburger */
     header {
       #navbar {

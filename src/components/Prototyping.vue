@@ -10,7 +10,7 @@
         </div>
         <div class="process">
             <div class="balls">
-                <div v-bind:id="ball.name" class="ball" v-bind:key="ball.id" v-for="ball in balls">
+                <div data-aos="fade-up" data-aos-delay="100" v-bind:id="ball.name" class="ball" v-bind:key="ball.id" v-for="ball in balls">
                     <div class="content">
                         <h4>{{ball.name}}</h4>
                         <div class="resources">
@@ -39,7 +39,7 @@
                         <th>Difficulty</th>
                         <th>Rating</th>
                     </tr>
-                    <tr class="tabledata" v-bind:key="tool.id" v-for="tool in tools">
+                    <tr data-aos="fade-right" class="tabledata" v-bind:key="tool.id" v-for="tool in tools">
                         <td class="tool">
                             <img v-bind:src="tool.logo" v-bind:alt="tool.name" class="logo">
                             <div class="namebox">

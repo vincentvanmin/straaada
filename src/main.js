@@ -5,8 +5,12 @@ import 'mdbvue/build/css/mdb.css';
 
 import App from './App.vue';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import SortedTablePlugin from "vue-sorted-table";
 import VueScrollactive from "vue-scrollactive";
+
 
 Vue.use(SortedTablePlugin);
 Vue.use(VueScrollactive);
@@ -14,5 +18,8 @@ Vue.use(VueScrollactive);
 Vue.config.productionTip = false
 
 new Vue({
+  created() {
+    AOS.init({ disable: "phone" });
+  },
   render: h => h(App),
 }).$mount('#app')

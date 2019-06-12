@@ -16,7 +16,7 @@
                     <th>Difficulty</th>
                     <th>Rating</th>
                 </tr>
-                <tr class="tabledata" v-bind:key="tool.id" v-for="tool in tools">
+                <tr data-aos="fade-right" class="tabledata" v-bind:key="tool.id" v-for="tool in tools">
                     <td class="tool">
                         <img v-bind:src="tool.logo" v-bind:alt="tool.name" class="logo">
                         <div class="namebox">
@@ -684,7 +684,7 @@ export default {
                     display: none;
                 }
             }
-            
+
             .tabledata {
                 .tool {
                     width: 60%;
