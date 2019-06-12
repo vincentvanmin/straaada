@@ -69,6 +69,9 @@
                 </g>
             </svg>
         </div>
+        <div class="tabletroad">
+            <img src="../assets/img/Road-Tablet.svg" alt="The road to a perfect UI Design">
+        </div>
         <div class="mobileroad">
             <img src="../assets/img/Road-Mobile.svg" alt="The road to a perfect UI Design">
         </div>
@@ -137,7 +140,7 @@ export default {
             line-height: 30px;
             color: $text-color;
             max-width: 440px;
-            padding: 20px 0 400px 0;
+            padding: 20px 0 350px 0;
         }
     }
 
@@ -169,7 +172,7 @@ export default {
         }
     }
 
-    .mobileroad {
+    .mobileroad, .tabletroad {
         display: none;
     }
 
@@ -273,7 +276,7 @@ export default {
             display: none;
         }
 
-        .mobileroad {
+        .tabletroad {
             display: block;
             width: 80%;
             margin: 0 auto;
@@ -292,6 +295,21 @@ export default {
     @media (max-width: 480px) {
         .headertext h1 {
             font-size: 7vw;
+        }
+
+        .tabletroad {
+            display: none;
+        }
+
+        .mobileroad {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px 0 100px 0;
+
+            img {
+                width: 100%;
+            }
         }
     }
 }

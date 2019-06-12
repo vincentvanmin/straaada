@@ -8,7 +8,7 @@
             <div id="muzli">
                 <div id="muzliball" class="ball">
                     <div class="content">
-                        <h5>Muzli</h5>
+                        <h5><a href="https://muz.li/" target="_blank">Muzli</a></h5>
                         <p class="what">Design inspiration, news and trends, curated exactly to your tastes. Say hello to Muzli!</p>
                         <div class="logo">
                             <img src="../assets/img/Muzli.svg" alt="Muzli">
@@ -113,14 +113,22 @@ export default {
                     overflow: hidden;
 
                     h5 {
-                        font-family: 'Nunito';
-                        font-weight: bold;
-                        font-size: 1.5em;
-                        line-height: 30px;
-                        color: $text-color;
-                        text-align: center;
                         padding-top: 10%;
                         margin: 0;
+                        text-align: center;
+
+                        a {
+                            font-family: 'Nunito';
+                            font-weight: bold;
+                            font-size: 1.5em;
+                            line-height: 30px;
+                            color: $text-color;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        } 
                     }
 
                     .what {
@@ -364,6 +372,12 @@ export default {
                     margin-bottom: 20px;
                 }
             }
+        }
+    }
+
+    @media (max-width: 350px) {
+        .extratool #muzli .ball .content .logo {
+            display: none;
         }
     }
 }

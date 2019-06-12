@@ -59,6 +59,11 @@
                             <p class="explenation">{{ tool.explenation }}</p>
                             <img v-bind:src="tool.ratingimg" alt="This is my personal rating for this tool" v-bind:id="'rating-' + tool.id" class="number">
                         </td>
+                        <td class="mobiledata">
+                            <img v-bind:src="tool.priceimgMobile" v-bind:alt="tool.price" class="mobileprice">
+                            <img v-bind:src="tool.levelimgMobile" v-bind:alt="tool.level" class="mobilelevel">
+                            <img v-bind:src="tool.ratingimgMobile" alt="This is my personal rating for this tool" class="mobilerating">
+                        </td>
                         <td class="open">
                             <img @click="toggle(tool.id)" :class="{ opened: opened.includes(tool.id) }" src="../assets/img/Chevron-Right.svg" alt="More info" class="chevron">
                         </td>
@@ -371,12 +376,15 @@ export default {
                     name: "Sketch (MacOS)",
                     description: "Product & UI design tool",
                     price: "$99,00 /y",
+                    priceimgMobile: require('../assets/img/Paid.svg'),
                     extra: "Free trial available",
                     level: "Medium",
+                    levelimgMobile: require('../assets/img/Medium.svg'),
                     learningcurve: "Medium learning curve",
                     explenation: "For me, Sketch offers you the best features of all design tools",
                     rating: 5,
                     ratingimg: require('../assets/img/Table-Rating-5.svg'),
+                    ratingimgMobile: require('../assets/img/Rating-5.svg'),
                     video: "https://www.youtube.com/embed/qywB0JHQeC4",
                     info: "Sketch for Mac is my favourite design software of all time! You can do web, product or software design all in one app. Sketch is easy to use and contains a lot of customizations because it's open source. Download plugins or check their well-explained learning documentation on the website. Watch this tutorial to get into the first steps!",
                     url: "https://www.sketch.com/"
@@ -387,12 +395,15 @@ export default {
                     name: "Adobe XD",
                     description: "All-in-one design tool",
                     price: "Free",
+                    priceimgMobile: require('../assets/img/Free.svg'),
                     extra: "No charges",
                     level: "Easy",
+                    levelimgMobile: require('../assets/img/Easy.svg'),
                     learningcurve: "Low learning curve",
                     explenation: "Adobe created a wonderful tool, best alternative from Sketch if you’re not on Mac",
                     rating: 5,
                     ratingimg: require('../assets/img/Table-Rating-5.svg'),
+                    ratingimgMobile: require('../assets/img/Rating-5.svg'),
                     video: "https://www.youtube.com/embed/JttI6YpmPGI",
                     info: "If you are not using a Mac (screw you), Adobe built a fantastic (free!) tool for you. Adobe XD (Experience Design) is a lightweight, easy to use design software to create your amazing interface design. With monthly updates, you're getting the newest functionalities all for free. Check it out now, watch the video for your first lesson.",
                     url: "https://www.adobe.com/products/xd.html"
@@ -403,12 +414,15 @@ export default {
                     name: "Invision Studio",
                     description: "Product design platform",
                     price: "Free",
+                    priceimgMobile: require('../assets/img/Free.svg'),
                     extra: "Enterprise v. available",
                     level: "Hard",
+                    levelimgMobile: require('../assets/img/Hard.svg'),
                     learningcurve: "High learning curve",
                     explenation: "Great tool with a lot of features (animations incl.), you will have to get used to it",
                     rating: 4,
                     ratingimg: require('../assets/img/Table-Rating-4.svg'),
+                    ratingimgMobile: require('../assets/img/Rating-4.svg'),
                     video: "https://www.youtube.com/embed/v10t2azNaFs",
                     info: "Invision built an amazing platform, inspired by world’s best design teams. It’s an all-in-one application available for Mac and Windows. Turn your ideas into powerful, responsive and animated designs with the vecor-based capabilities. Collaborate with your team to finish the design and start building a prototype. I really recommend you to take a look!",
                     url: "https://www.invisionapp.com/studio"
@@ -419,12 +433,15 @@ export default {
                     name: "Figma",
                     description: "In-browser design app",
                     price: "Free",
+                    priceimgMobile: require('../assets/img/Free.svg'),
                     extra: "Premium v. available",
                     level: "Easy",
+                    levelimgMobile: require('../assets/img/Easy.svg'),
                     learningcurve: "Low learning curve",
                     explenation: "Working with Figma is really enjoyable, but it leaves some features behind",
                     rating: 4,
                     ratingimg: require('../assets/img/Table-Rating-4.svg'),
+                    ratingimgMobile: require('../assets/img/Rating-4.svg'),
                     video: "https://www.youtube.com/embed/jk1T0CdLxwU",
                     info: "Did I just say 'In-browser design app'? Yes I did! Figma is a easy to use design application (/website) that runs all in your browser window. Also, it's completely free for individuals. Get yourself up and running in no-time and create beautiful wireframes, interfaces and prototypes! Watch the video where Jesse will take you through the first steps.",
                     url: "https://www.figma.com/"
@@ -435,12 +452,15 @@ export default {
                     name: "ProtoIO",
                     description: "Interface design app",
                     price: "$29.00 /m",
+                    priceimgMobile: require('../assets/img/Paid.svg'),
                     extra: "Free trial available",
                     level: "Easy",
+                    levelimgMobile: require('../assets/img/Easy.svg'),
                     learningcurve: "Low learning curve",
                     explenation: "Great tool to create fast and easy working prototypes",
                     rating: 4,
                     ratingimg: require('../assets/img/Table-Rating-4.svg'),
+                    ratingimgMobile: require('../assets/img/Rating-4.svg'),
                     video: "https://www.youtube.com/embed/9dtWRECqJmk",
                     info: "Proto IO isn't well known as a design application, but against creating great prototypes, you can acually create great designs aswell! Proto IO provides a 3 video tutorial to get you started with their software, I can recommend you watching it!",
                     url: "https://proto.io/"
@@ -451,12 +471,15 @@ export default {
                     name: "Framer",
                     description: "Interactive design tool",
                     price: "$12.00 /m",
+                    priceimgMobile: require('../assets/img/Paid.svg'),
                     extra: "Free trial available",
                     level: "Medium",
+                    levelimgMobile: require('../assets/img/Medium.svg'),
                     learningcurve: "Medium learning curve",
                     explenation: "Framer is getting better and better, really worth a try!",
                     rating: 4,
                     ratingimg: require('../assets/img/Table-Rating-4.svg'),
+                    ratingimgMobile: require('../assets/img/Rating-4.svg'),
                     video: "https://www.youtube.com/embed/zAV6RIHswto",
                     info: "Framer? What's that? Framer isn't like every other design software. If you're a developer, Framer might be your tool of choice. Prototyping in Framer is taken to the next level, because you can use actual React JS components to build amazing animations and deliver an extraordinary experience. Watch Athanasia's video tutorials to get started!",
                     url: "https://www.framer.com/"
@@ -834,6 +857,10 @@ export default {
                             left: 64.5%;
                             width: 13%;
                         }
+                    }
+
+                    .mobiledata {
+                        display: none;
                     }
 
                     .open {
@@ -1336,10 +1363,16 @@ export default {
 
             .big-number {
                 width: 30%;
+                font-size: 15vw;
+                line-height: unset;
             }
 
             .title {
                 width: 70%;
+
+                h3 {
+                    font-size: 2em;
+                }
 
                 .main-description {
                     top: 45%;
@@ -1347,29 +1380,52 @@ export default {
             }
         }
 
-        .design .tablebox table .tabledata {
-            .tool {
-                width: 50%;
-            }
-            .pricing {
-                width: 20%;
+        .design .tablebox table {
+            .tableheader {
+                th:first-child {
+                    width: 100%;
+                }
 
-                .extra {
+                th:nth-child(2), th:nth-child(3) {
                     display: none;
                 }
             }
 
-            .difficulty {
-                width: 20%;
-
-                .learningcurve {
+            .tabledata {
+                .tool {
+                    width: 60%;
+                }
+                .pricing, .difficulty {
                     display: none;
                 }
-            }
 
-            .open {
-                width: 10%;
+                .mobiledata {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                    width: 30%;
+                    padding-right: 3%;
+
+                    img {
+                        width: 25%;
+                        max-height: 40px;
+                    }
+
+                    .mobilelevel {
+                        padding: 0 4%;
+                    }
+                }
+
+                .open {
+                    width: 10%;
+                }
             }
+        } 
+    }
+
+    @media (max-width: 350px) {
+        .titlebox .title {
+            padding-left: 0;
         }
     }
 }

@@ -858,10 +858,16 @@ export default {
         .titlebox {
             .big-number {
                 width: 30%;
+                font-size: 15vw;
+                line-height: unset;
             }
 
             .title {
                 width: 70%;
+
+                h3 {
+                    font-size: 2em;
+                }
             }
         }
 
@@ -874,6 +880,32 @@ export default {
                 .steps {
                     width: 80%;
                 }
+
+                .icons .icon {
+                    width: 50%;
+                    padding-bottom: 15px;
+
+                    img {
+                        width: 35%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 350px) {
+        .titlebox .title {
+            padding-left: 0;
+        }
+
+        .option .concept .right {
+            .counter {
+                display: none;
+            }
+
+            .steps {
+                width: 100%;
+                padding-left: 0;
             }
         }
     }

@@ -132,6 +132,8 @@ html {
 }
 
 #app {
+  max-width: 100vw;
+  overflow: hidden;
   font-family: 'Open Sans', sans-serif;
   color: $text-color;
   // background-image: url('./assets/img/Mountain.png');
@@ -456,6 +458,20 @@ html {
             }
           }
         }         
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    footer {
+      .copy {
+        width: 100%;
+        padding-right: 5%;
+        text-align: center;
+      }
+
+      .logo {
+        display: none;
       }
     }
   }
