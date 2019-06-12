@@ -69,10 +69,10 @@
                 </g>
             </svg>
         </div>
-        <div class="tabletroad">
+        <div data-aos="fade-up" data-aos-delay="500" class="tabletroad">
             <img src="../assets/img/Road-Tablet.svg" alt="The road to a perfect UI Design">
         </div>
-        <div class="mobileroad">
+        <div data-aos="fade-up" data-aos-delay="500" class="mobileroad">
             <img src="../assets/img/Road-Mobile.svg" alt="The road to a perfect UI Design">
         </div>
         <div class="timelapsebox">
@@ -259,7 +259,7 @@ export default {
 
         .headertext {
             max-width: 80%;
-            padding-top: 80px;
+            padding-top: 50px;
 
             h1 {
                 font-size: 5vw;

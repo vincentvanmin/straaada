@@ -859,7 +859,6 @@ export default {
             .big-number {
                 width: 30%;
                 font-size: 15vw;
-                line-height: unset;
             }
 
             .title {

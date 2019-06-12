@@ -10,9 +10,9 @@
           <input class="menu-btn" type="checkbox" id="menu-btn" />
           <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
           <ul class="nav">
-            <li class="nav-item"><a class="scrollactive-item" href="#concepting">Concepting</a></li>
-            <li class="nav-item"><a class="scrollactive-item" href="#inspiration">Inspiration</a></li>
-            <li class="nav-item"><a class="scrollactive-item" href="#prototyping">Prototyping</a></li>
+            <li class="nav-item"><a @click="closenav()" class="scrollactive-item" href="#concepting">Concepting</a></li>
+            <li class="nav-item"><a @click="closenav()" class="scrollactive-item" href="#inspiration">Inspiration</a></li>
+            <li class="nav-item"><a @click="closenav()" class="scrollactive-item" href="#prototyping">Prototyping</a></li>
           </ul>
         </scrollactive>
       </div>
@@ -54,6 +54,7 @@ import Contact from './components/Contact.vue'
 
 export default {
   name: 'app',
+
   components: {
     Home,
     Process,
@@ -64,7 +65,13 @@ export default {
     Prototyping,
     Tutorial,
     Contact
-  }
+  },
+
+  methods: {
+        closenav() {
+            document.getElementById('menu-btn').checked = false;
+        }
+    }
 }
 
 </script>
