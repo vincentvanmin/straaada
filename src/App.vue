@@ -42,6 +42,16 @@
 </template>
 
 <script>
+// const Home = () => import('./components/Home.vue')
+// const Process = () => import('./components/Process.vue')
+// const Concepting = () => import('./components/Concepting.vue')
+// const Help = () => import('./components/Help.vue')
+// const Inspiration = () => import('./components/Inspiration.vue')
+// const More = () => import('./components/More.vue')
+// const Prototyping = () => import('./components/Prototyping.vue')
+// const Tutorial = () => import('./components/Tutorial.vue')
+// const Contact = () => import('./components/Contact.vue')
+
 import Home from './components/Home.vue'
 import Process from './components/Process.vue'
 import Concepting from './components/Concepting.vue'

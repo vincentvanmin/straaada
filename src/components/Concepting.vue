@@ -236,8 +236,7 @@ export default {
         padding: 60px 0 20px 0;
 
         .subtitle {
-            border-top: solid 4px $action-color;
-            border-bottom: solid 4px $action-color;
+            box-shadow: 1px 1px 8px rgba(77, 13, 85, 0.25);
             padding: 10px 0;
 
             h4 {
