@@ -70,7 +70,7 @@
                         <td class="more" v-if="opened.includes(tool.id)">
                             <div class="videobox">
                                 <div class="video">
-                                    <iframe width="560" height="349" v-bind:src="tool.video" frameborder="0" allowfullscreen></iframe>
+                                    <iframe width="560" height="349" v-bind:src="tool.video" frameborder="0" allowfullscreen title="Tutorial"></iframe>
                                 </div>
                                 <a v-bind:href="tool.url" target="_blank" class="visitbuttonmobile">
                                     <p>Visit website</p>
@@ -504,6 +504,7 @@ export default {
 <style lang="scss" scoped>
 @font-face {
   font-family: 'Open Sans';
+  font-display: auto;
   src: url(../assets/fonts/OpenSans-Bold.ttf) format('truetype');
   font-weight: bolder;
 }

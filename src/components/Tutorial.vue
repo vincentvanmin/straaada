@@ -6,7 +6,7 @@
         </div>
         <div class="videobox">
             <div id="tutorialvideo">
-                <iframe width="560" height="349" src="https://www.youtube.com/embed/_Hp_dI0DzY4" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="349" src="https://www.youtube.com/embed/_Hp_dI0DzY4" frameborder="0" allowfullscreen title="HowToUseDesignSoftware"></iframe>
             </div>
         </div>
         <div class="buttons">

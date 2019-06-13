@@ -32,7 +32,7 @@
 
     <footer>
       <div class="copy">
-        <p>&copy; Copyright 2019 - <a href="http://vincent.van.minnebruggen.mtantwerp.eu" target="_blank">Vincent Van Minnebruggen</a></p>
+        <p>&copy; Copyright 2019 - <a href="http://vincent.van.minnebruggen.mtantwerp.eu" target="_blank" rel="noreferrer noopener">Vincent Van Minnebruggen</a></p>
       </div>
       <div class="logo">
         <img src="./assets/img/Straaada-Icon.svg" alt="Straaada">
@@ -93,45 +93,53 @@ export default {
 //fonts
 @font-face {
   font-family: 'Open Sans';
+  font-display: auto;
   src: url(./assets/fonts/OpenSans-Regular.ttf) format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
+  font-display: auto;
   src: url(./assets/fonts/OpenSans-Semibold.ttf) format('truetype');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'OpenSans-Semibold';
+  font-display: auto;
   src: url(./assets/fonts/OpenSans-Semibold.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Nunito';
+  font-display: auto;
   src: url(./assets/fonts/Nunito-Regular.ttf) format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Nunito-Regular';
+  font-display: auto;
   src: url(./assets/fonts/Nunito-Regular.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Nunito';
+  font-display: auto;
   src: url(./assets/fonts/Nunito-SemiBold.ttf) format('truetype');
   font-weight: bold;
 }
 
 @font-face {
   font-family: 'Nunito-SemiBold';
+  font-display: auto;
   src: url(./assets/fonts/Nunito-SemiBold.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Nunito';
+    font-display: auto;
     src: url(./assets/fonts/Nunito-Light.ttf) format('truetype');
     font-weight: lighter;
 }

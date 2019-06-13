@@ -179,6 +179,7 @@ export default {
 <style lang="scss" scoped>
 @font-face {
   font-family: 'Open Sans';
+  font-display: auto;
   src: url(../assets/fonts/OpenSans-Bold.ttf) format('truetype');
   font-weight: bolder;
 }

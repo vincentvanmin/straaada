@@ -6,7 +6,7 @@
         </div>
         <div class="videobox">
             <div id="helpvideo">
-                <iframe width="560" height="349" src="https://www.youtube.com/embed/lKPgRK0llO8" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="349" src="https://www.youtube.com/embed/lKPgRK0llO8" frameborder="0" allowfullscreen title="HowFreehandWorks"></iframe>
             </div>
         </div>
         <div class="buttons">

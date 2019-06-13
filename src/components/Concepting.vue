@@ -15,7 +15,7 @@
             <div class="concept">
                 <div class="left">
                     <div data-aos="fade-right" class="wireframingvideo">
-                        <iframe width="560" height="349" src="https://www.youtube.com/embed/PmmQjLqJQlY" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="560" height="349" src="https://www.youtube.com/embed/PmmQjLqJQlY" frameborder="0" allowfullscreen title="HowToWireframe"></iframe>
                     </div>
                 </div>
                 <div class="right">
@@ -49,7 +49,7 @@
             <div class="concept">
                 <div class="left">
                     <div data-aos="fade-right" class="wireframingvideo">
-                        <iframe width="560" height="349" src="https://www.youtube.com/embed/zd65qDvLZF0" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="560" height="349" src="https://www.youtube.com/embed/zd65qDvLZF0" frameborder="0" allowfullscreen title="HowToUseFreehand"></iframe>
                     </div>
                     <a href="#" target="_blank" class="visitbuttonmobile">
                         <p>Visit website</p>
@@ -171,6 +171,7 @@ export default {
 <style lang="scss" scoped>
 @font-face {
   font-family: 'Open Sans';
+  font-display: auto;
   src: url(../assets/fonts/OpenSans-Bold.ttf) format('truetype');
   font-weight: bolder;
 }
