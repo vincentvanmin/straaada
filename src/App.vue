@@ -244,7 +244,7 @@ html {
         display: flex;
         justify-content: flex-start;
 
-        @media (max-width: 960px) {
+        @media only screen and (max-width: 960px) {
           width: 20%;
         }
 
@@ -271,7 +271,7 @@ html {
           color: $red;
           line-height: 30px;
 
-          @media (max-width: 960px) {
+          @media only screen and (max-width: 960px) {
             display: none;
           }
         }
@@ -288,7 +288,7 @@ html {
           display: none;
         }
 
-        @media (max-width: 960px) {
+        @media only screen and (max-width: 960px) {
           width: 80%;
         }
 
@@ -385,7 +385,7 @@ html {
     }
   }
 
-  @media (max-width: 640px) {
+  @media only screen and (max-width: 640px) {
     /* background */
     &::before{
       background-size: cover;
@@ -495,7 +495,11 @@ html {
     }
   }
 
-  @media (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
+    header #navbar .navbar-logo {
+      margin-left: 5%;
+    }
+    
     footer {
       .copy {
         width: 100%;
@@ -509,7 +513,7 @@ html {
     }
   }
 
-  @media (max-height: 480px) {
+  @media only screen and (max-height: 480px) {
     header {
       position: static;
     }

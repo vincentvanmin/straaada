@@ -283,7 +283,7 @@ export default {
         }
     }
 
-    @media (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
         .extratool #muzli {
             .ball {
                 width: 35%;
@@ -295,7 +295,7 @@ export default {
         } 
     }
 
-    @media (max-width: 1100px) {
+    @media only screen and (max-width: 1100px) {
         .extratool #muzli {
             .explenation {
                 padding-left: 10%;
@@ -303,7 +303,7 @@ export default {
         } 
     }
 
-    @media (max-width: 960px) {
+    @media only screen and (max-width: 960px) {
         .subtitle .description {
             width: 70%;
         }
@@ -338,13 +338,13 @@ export default {
         }
     }
 
-    @media (max-width: 750px) {
+    @media only screen and (max-width: 750px) {
         .extratool #muzli .ball {
             width: 50%;
         }
     }
 
-    @media (max-width: 640px) {
+    @media only screen and (max-width: 640px) {
         .extratool #muzli {
             .ball {
                 width: 65%;
@@ -356,14 +356,14 @@ export default {
         }
     }
 
-    @media (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
         .subtitle .description {
             width: 90%;
         }
         
         .extratool {
             width: 90%;
-            
+
             #muzli .ball {
                 width: 80%;
             }
@@ -383,13 +383,13 @@ export default {
         }
     }
 
-    @media (max-width: 350px) {
+    @media only screen and (max-width: 350px) {
         .extratool #muzli .ball .content .logo {
             display: none;
         }
     }
 
-    @media (min-width: 1650px) {
+    @media only screen and (min-width: 1650px) {
         .subtitle .description {
             width: 50%;
         }

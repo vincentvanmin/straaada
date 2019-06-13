@@ -589,14 +589,14 @@ export default {
         }
     }
 
-    @media (max-width: 1300px) {
+    @media only screen and (max-width: 1300px) {
         .more-tools .balls .ball .content {
             .what {padding-top: 2%;}
             .icons {padding: 8% 10% 8% 10%;}
         }
     }
 
-    @media (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
         .titlebox .title {
             padding-left: 10px;
         }
@@ -680,7 +680,7 @@ export default {
         }
     }
 
-    @media (max-width: 1100px) {
+    @media only screen and (max-width: 1100px) {
         .titlebox {
             .big-number {
                 width: 30%;
@@ -720,14 +720,14 @@ export default {
         }
     }
 
-    @media (max-width: 960px) {
+    @media only screen and (max-width: 960px) {
         .titlebox {
             width: 80%;
 
             .big-number {
                 width: 35%;
 
-                @media (max-width: 800px) {
+                @media only screen and (max-width: 800px) {
                     width: 40%;
                 }
             }
@@ -803,7 +803,7 @@ export default {
                         .icons {
                             padding: 10% 10% 12% 10%;
 
-                            @media (max-width: 750px) {
+                            @media only screen and (max-width: 750px) {
                                 padding: 6% 10% 8% 10%;
                             }
                         }
@@ -817,7 +817,7 @@ export default {
         }
     }
 
-    @media (max-width: 640px) {
+    @media only screen and (max-width: 640px) {
         .titlebox {
             position: relative;
             padding-bottom: 20%;
@@ -849,7 +849,7 @@ export default {
         }
     }
 
-    @media (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
         .titlebox {
             width: 90%;
 
@@ -904,7 +904,7 @@ export default {
         } 
     }
 
-    @media (max-width: 350px) {
+    @media only screen and (max-width: 350px) {
         .titlebox .title {
             padding-left: 0;
         }
@@ -921,7 +921,7 @@ export default {
         }
     }
 
-    @media (min-width: 1650px) {
+    @media only screen and (min-width: 1650px) {
         .titlebox, .option, .more-tools {
             width: 70%;
         }

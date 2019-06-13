@@ -371,7 +371,7 @@ export default {
         }
     }
 
-    @media (max-width: 960px) {
+    @media only screen and (max-width: 960px) {
         .subtitle {
             width: 80%;
 
@@ -419,7 +419,7 @@ export default {
         }
     }
 
-    @media (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
         padding-bottom: 100px;
 
         .subtitle {
@@ -438,7 +438,7 @@ export default {
         } 
     }
 
-    @media (min-width: 1650px) {
+    @media only screen and (min-width: 1650px) {
         .subtitle, .formbox {
             width: 70%;
         }

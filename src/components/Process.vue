@@ -185,7 +185,7 @@ export default {
         }
     }
 
-    @media (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
         .boxes .box .more {
             width: 120px;
             height: 120px;
@@ -197,7 +197,7 @@ export default {
         }
     }
 
-    @media (max-width: 960px) {
+    @media only screen and (max-width: 960px) {
         .boxes {
             flex-wrap: wrap;
             width: 80%;
@@ -259,7 +259,7 @@ export default {
         }
     }
 
-    @media (max-width: 640px) {
+    @media only screen and (max-width: 640px) {
         .boxes {
             width: 80%;
             padding-bottom: 100px;
@@ -276,13 +276,13 @@ export default {
         }
     }
 
-    @media (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
         .boxes {
             width: 90%;
         }
     }
 
-    @media (min-width: 1650px) {
+    @media only screen and (min-width: 1650px) {
         .boxes {
             width: 70%;
         }

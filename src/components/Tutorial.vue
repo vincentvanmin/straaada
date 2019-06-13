@@ -134,13 +134,13 @@ export default {
         }
     }
 
-    @media (max-width: 960px) {
+    @media only screen and (max-width: 960px) {
         .videobox {
             width: 80%;
         }
     }
 
-    @media (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
         .subtitle .description {
             width: 90%;
         }
@@ -163,7 +163,7 @@ export default {
         }
     }
 
-    @media (min-width: 1650px) {
+    @media only screen and (min-width: 1650px) {
         .subtitle .description {
             width: 50%;
         }

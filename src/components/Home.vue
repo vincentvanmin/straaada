@@ -200,7 +200,7 @@ export default {
         
     }
 
-    @media (max-width: 1300px) {
+    @media only screen and (max-width: 1300px) {
         .headertext h2 {
             font-size: 1em;
         }
@@ -210,7 +210,7 @@ export default {
         }
     }
 
-    @media (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
         .headertext h2 {
             width: 90%;
         }
@@ -220,7 +220,7 @@ export default {
         }
     }
 
-    @media (max-width: 960px) {
+    @media only screen and (max-width: 960px) {
         .headertext {
             margin-left: 10%;
             width: 50%;
@@ -242,19 +242,19 @@ export default {
         }
     }
 
-    @media (max-width: 800px) {
+    @media only screen and (max-width: 800px) {
         .timelapsebox {
             transform: scale(.5);
         }
     }
 
-    @media (max-width: 740px) {
+    @media only screen and (max-width: 740px) {
         .timelapsebox {
             transform: scale(.4);
         }
     }
 
-    @media (max-width: 640px) {
+    @media only screen and (max-width: 640px) {
         min-height: auto;
 
         .headertext {
@@ -292,7 +292,7 @@ export default {
         }
     }
 
-    @media (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
         .headertext {
             width: 90%;
             margin: 0 auto;
@@ -318,7 +318,7 @@ export default {
         }
     }
 
-    @media (min-width: 1650px) {
+    @media only screen and (min-width: 1650px) {
         .headertext {
             margin-left: 15%;
         }

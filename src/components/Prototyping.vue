@@ -1055,7 +1055,7 @@ export default {
         }
     }
 
-    @media (max-width: 1300px) {
+    @media only screen and (max-width: 1300px) {
         .titlebox {
             .title {
                 width: 62%;
@@ -1064,7 +1064,7 @@ export default {
         }
     }
 
-    @media (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
         .titlebox {
             .title { 
                 width: 60%;
@@ -1107,7 +1107,7 @@ export default {
         } 
     }
 
-    @media (max-width: 1100px) {
+    @media only screen and (max-width: 1100px) {
         .titlebox {
             .big-number {
                 width: 30%;
@@ -1191,14 +1191,14 @@ export default {
         }
     }
 
-    @media (max-width: 960px) {
+    @media only screen and (max-width: 960px) {
         .titlebox {
             width: 80%;
 
             .big-number {
                 width: 35%;
 
-                @media (max-width: 800px) {
+                @media only screen and (max-width: 800px) {
                     width: 40%;
                 }
             }
@@ -1257,7 +1257,7 @@ export default {
                             display: none;
                         }
 
-                        @media (max-width: 800px) {
+                        @media only screen and (max-width: 800px) {
                             &:nth-child(4) {
                                 display: none;
                             }
@@ -1273,7 +1273,7 @@ export default {
                     left: 19%;
                     top: 39.5%;
 
-                    @media (max-width: 800px) {
+                    @media only screen and (max-width: 800px) {
                         .content .resources .resource {
                             &:nth-child(3) {
                                 display: none;
@@ -1285,7 +1285,7 @@ export default {
                 #Videos {
                     margin-top: 50%;
 
-                    @media (max-width: 800px) {
+                    @media only screen and (max-width: 800px) {
                         .content .resources .resource {
                             &:nth-child(3) {
                                 display: none;
@@ -1333,7 +1333,7 @@ export default {
                             display: none;
                         }
 
-                        @media (max-width: 800px) {
+                        @media only screen and (max-width: 800px) {
                             .more {
                                 flex-wrap: wrap;
 
@@ -1367,7 +1367,7 @@ export default {
         }
     }
 
-    @media (max-width: 640px) {
+    @media only screen and (max-width: 640px) {
         .titlebox {
             position: relative;
             padding-bottom: 20%;
@@ -1418,7 +1418,7 @@ export default {
         }
     }
 
-    @media (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
         .titlebox {
             width: 90%;
             padding-bottom: 40%;
@@ -1544,7 +1544,7 @@ export default {
         } 
     }
 
-    @media (max-width: 350px) {
+    @media only screen and (max-width: 350px) {
         .titlebox .title {
             padding-left: 0;
         }
@@ -1555,7 +1555,7 @@ export default {
         }
     }
 
-    @media (min-width: 1650px) {
+    @media only screen and (min-width: 1650px) {
         .titlebox, .process .balls, .design {
             width: 70%;
         }
