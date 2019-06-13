@@ -141,6 +141,14 @@ export default {
     }
 
     @media (max-width: 480px) {
+        .subtitle .description {
+            width: 90%;
+        }
+
+        .videobox {
+            width: 90%;
+        }
+
         .buttons {
             flex-wrap: wrap;
 
@@ -152,6 +160,16 @@ export default {
                     margin-bottom: 20px;
                 }
             }
+        }
+    }
+
+    @media (min-width: 1650px) {
+        .subtitle .description {
+            width: 50%;
+        }
+        
+        .videobox {
+            width: 70%;
         }
     }
 }

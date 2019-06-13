@@ -357,9 +357,17 @@ export default {
     }
 
     @media (max-width: 480px) {
-        .extratool #muzli .ball {
-            width: 85%;
+        .subtitle .description {
+            width: 90%;
         }
+        
+        .extratool {
+            width: 90%;
+            
+            #muzli .ball {
+                width: 80%;
+            }
+        } 
 
         .buttons {
             flex-wrap: wrap;
@@ -378,6 +386,16 @@ export default {
     @media (max-width: 350px) {
         .extratool #muzli .ball .content .logo {
             display: none;
+        }
+    }
+
+    @media (min-width: 1650px) {
+        .subtitle .description {
+            width: 50%;
+        }
+
+        .videobox {
+            width: 70%;
         }
     }
 }

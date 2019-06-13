@@ -1,179 +1,208 @@
 <template>
-    <section id="inspiration" name="inspiration">
-        <div class="titlebox">
-            <img src="../assets/img/Dots.svg" alt="..." class="dots">
-            <div class="title">
-                <h3>Inspiration</h3>
-                <p class="main-description">Based on the concept you just made, you are now ready to get some great ideas for your final design. Professional designers are helping you for free!</p>
+  <section id="inspiration" name="inspiration">
+    <div class="titlebox">
+      <img src="../assets/img/Dots.svg" alt="..." class="dots">
+      <div class="title">
+        <h3>Inspiration</h3>
+        <p
+          class="main-description"
+        >Based on the concept you just made, you are now ready to get some great ideas for your final design. Professional designers are helping you for free!</p>
+      </div>
+      <p class="big-number">02</p>
+    </div>
+    <div class="tablebox">
+      <table>
+        <tr class="tableheader">
+          <th>TOOL</th>
+          <th>Pricing</th>
+          <th>Difficulty</th>
+          <th>Rating</th>
+        </tr>
+        <tr data-aos="fade-right" class="tabledata" v-bind:key="tool.id" v-for="tool in tools">
+          <td class="tool">
+            <img v-bind:src="tool.logo" v-bind:alt="tool.name" class="logo">
+            <div class="namebox">
+              <h5 class="name">{{ tool.name }}</h5>
+              <p class="description">{{ tool.description }}</p>
             </div>
-            <p class="big-number">02</p>
-        </div>
-        <div class="tablebox">
-            <table>
-                <tr class="tableheader">
-                    <th>TOOL</th>
-                    <th>Pricing</th>
-                    <th>Difficulty</th>
-                    <th>Rating</th>
-                </tr>
-                <tr data-aos="fade-right" class="tabledata" v-bind:key="tool.id" v-for="tool in tools">
-                    <td class="tool">
-                        <img v-bind:src="tool.logo" v-bind:alt="tool.name" class="logo">
-                        <div class="namebox">
-                            <h5 class="name">{{ tool.name }}</h5>
-                            <p class="description">{{ tool.description }}</p>
-                        </div>
-                    </td>
-                    <td class="pricing">
-                        <p class="price">{{ tool.price }}</p>
-                        <p class="extra">{{ tool.extra }}</p>
-                    </td>
-                    <td class="difficulty">
-                        <p class="level">{{ tool.level }}</p>
-                        <p class="learningcurve">{{ tool.learningcurve }}</p>
-                    </td>
-                    <td class="rating">
-                        <p class="explenation">{{ tool.explenation }}</p>
-                        <img v-bind:src="tool.ratingimg" alt="This is my personal rating for this tool" class="number">
-                    </td>
-                    <td class="mobiledata">
-                        <img v-bind:src="tool.priceimgMobile" v-bind:alt="tool.price" class="mobileprice">
-                        <img v-bind:src="tool.levelimgMobile" v-bind:alt="tool.level" class="mobilelevel">
-                        <img v-bind:src="tool.ratingimgMobile" alt="This is my personal rating for this tool" class="mobilerating">
-                    </td>
-                    <td class="open">
-                        <img @click="toggle(tool.id)" :class="{ opened: opened.includes(tool.id) }" src="../assets/img/Chevron-Right.svg" alt="More info" class="chevron">
-                    </td>
-                    <td class="more" v-if="opened.includes(tool.id)">
-                        <p class="info">{{ tool.info }}</p>
-                        <a v-bind:href="tool.url" target="_blank" class="visitbutton" rel="noreferrer noopener">
-                            <p>Visit website</p>
-                            <div class="arrow"></div>
-                        </a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </section>
+          </td>
+          <td class="pricing">
+            <p class="price">{{ tool.price }}</p>
+            <p class="extra">{{ tool.extra }}</p>
+          </td>
+          <td class="difficulty">
+            <p class="level">{{ tool.level }}</p>
+            <p class="learningcurve">{{ tool.learningcurve }}</p>
+          </td>
+          <td class="rating">
+            <p class="explenation">{{ tool.explenation }}</p>
+            <img
+              v-bind:src="tool.ratingimg"
+              alt="This is my personal rating for this tool"
+              class="number"
+            >
+          </td>
+          <td class="mobiledata">
+            <img v-bind:src="tool.priceimgMobile" v-bind:alt="tool.price" class="mobileprice">
+            <div class="popup price-popup">
+              <p>{{ tool.price }}</p>
+            </div>
+            <img v-bind:src="tool.levelimgMobile" v-bind:alt="tool.level" class="mobilelevel">
+            <div class="popup level-popup">
+              <p>{{ tool.level }}</p>
+            </div>
+            <img v-bind:src="tool.ratingimgMobile" alt="This is my personal rating for this tool" class="mobilerating">
+            <div class="popup rating-popup">
+              <p>{{ tool.rating + " stars" }}</p>
+            </div>
+          </td>
+          <td class="open">
+            <img
+              @click="toggle(tool.id)"
+              :class="{ opened: opened.includes(tool.id) }"
+              src="../assets/img/Chevron-Right.svg"
+              alt="More info"
+              class="chevron"
+            >
+          </td>
+          <td class="more" v-if="opened.includes(tool.id)">
+            <p class="info">{{ tool.info }}</p>
+            <a v-bind:href="tool.url" target="_blank" class="visitbutton" rel="noreferrer noopener">
+              <p>Visit website</p>
+              <div class="arrow"></div>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
 </template>
 
 <script>
 export default {
-    name: 'inspiration',
+  name: "inspiration",
 
-    components: {
-        
-    },
+  components: {},
 
-    data() {
-        return {
-            opened: [],
-            tools: [
-                {
-                    id: 1,
-                    logo: require('../assets/img/Dribbble.svg'),
-                    name: "Dribbble",
-                    description: "Designers community",
-                    price: "Free",
-                    priceimgMobile: require('../assets/img/Free.svg'),
-                    extra: "Pro version available",
-                    level: "Easy",
-                    levelimgMobile: require('../assets/img/Easy.svg'),
-                    learningcurve: "Very low learning curve",
-                    explenation: "For me, Dribbble offers you the best examples of all inspirational tools",
-                    rating: 5,
-                    ratingimg: require('../assets/img/Table-Rating-5.svg'),
-                    ratingimgMobile: require('../assets/img/Rating-5.svg'),
-                    info: "Dribble is the first website I visit if I need any inspiration for my graphic designs. You can either search, filter or just scroll through featured items that were mostly posted by professional designers. Dribbble has a very wide variety in graphic designs, user interface designs and product designs. Against static user interfaces, you can also find beautiful animations and very nice kinds of typography.",
-                    url: "https://dribbble.com/"
-                },
-                {
-                    id: 2,
-                    logo: require('../assets/img/Lapa-Ninja.svg'),
-                    name: "Lapa Ninja",
-                    description: "Landing page gallery",
-                    price: "Free",
-                    priceimgMobile: require('../assets/img/Free.svg'),
-                    extra: "No charges",
-                    level: "Easy",
-                    levelimgMobile: require('../assets/img/Easy.svg'),
-                    learningcurve: "Low learning curve",
-                    explenation: "Exploring all different subjects of landing pages makes this a powerful tool",
-                    rating: 5,
-                    ratingimg: require('../assets/img/Table-Rating-5.svg'),
-                    ratingimgMobile: require('../assets/img/Rating-5.svg'),
-                    info: "Lapa Ninja is a gallery featuring more than 1900 of the best landing page examples from all over the web. You can search for your own subject, or pick one of the many inspiration filter options in the navigation. Next to the gallery, Lapa Ninja also gives you a lot of courses available to be a better designer, make sure to check them out if you are interested!",
-                    url: "https://www.lapa.ninja/"
-                },
-                {
-                    id: 3,
-                    logo: require('../assets/img/Behance.svg'),
-                    name: "Behance",
-                    description: "Discover graphical content",
-                    price: "Free",
-                    priceimgMobile: require('../assets/img/Free.svg'),
-                    extra: "Premium via Adobe",
-                    level: "Hard",
-                    levelimgMobile: require('../assets/img/Hard.svg'),
-                    learningcurve: "Medium learning curve",
-                    explenation: "I like the fact that you can also find graphical content designs agains UI Designs",
-                    rating: 4,
-                    ratingimg: require('../assets/img/Table-Rating-4.svg'),
-                    ratingimgMobile: require('../assets/img/Rating-4.svg'),
-                    info: "Behance by Adobe is a well made inspirational website for either graphic designers and web designers. Make your way to the search icon on the top right corner and filter or search what you are looking for. If you check out the details of an item, you can scroll down and see how the designer made it, which tools where used, ... which may be useful for a further step in your design process.",
-                    url: "https://www.behance.net/"
-                },
-                {
-                    id: 4,
-                    logo: require('../assets/img/UI-Movement.svg'),
-                    name: "UI Movement",
-                    description: "Designers community",
-                    price: "Free",
-                    priceimgMobile: require('../assets/img/Free.svg'),
-                    extra: "Sponsorship possible",
-                    level: "Easy",
-                    levelimgMobile: require('../assets/img/Easy.svg'),
-                    learningcurve: "Low learning curve",
-                    explenation: "All inspiration is brought to you by video content, a great positive!",
-                    rating: 4,
-                    ratingimg: require('../assets/img/Table-Rating-4.svg'),
-                    ratingimgMobile: require('../assets/img/Rating-4.svg'),
-                    info: "UI Movement isn't really like the previous inspirational websites. On this site, you will mostly get inspired by wonderful animations you can use in your site. The best thing to do is safe the ones you really like so you can get back to them when you are ready to develop! If you are interested in weekly inspiration, you can subscribe to their newsletter for free.",
-                    url: "https://uimovement.com/"
-                },
-                {
-                    id: 5,
-                    logo: require('../assets/img/Awwwards.svg'),
-                    name: "Awwwards",
-                    description: "Best site prize winners",
-                    price: "Free",
-                    priceimgMobile: require('../assets/img/Free.svg'),
-                    extra: "Premium via Adobe",
-                    level: "Medium",
-                    levelimgMobile: require('../assets/img/Medium.svg'),
-                    learningcurve: "Medium learning curve",
-                    explenation: "A good chance to outstand other designers if you are confident about your concept",
-                    rating: 3,
-                    ratingimg: require('../assets/img/Table-Rating-3.svg'),
-                    ratingimgMobile: require('../assets/img/Rating-3.svg'),
-                    info: "Last but not least is Awwwards. They feature the latest and the greatest websites all over the internet. You can not only look at a design, but you are also able to visit the sites and interact with it. This gives you the chance to experience the design yourself. ",
-                    url: "https://www.awwwards.com/"
-                }
-            ]
+  data() {
+    return {
+      opened: [],
+      tools: [
+        {
+          id: 1,
+          logo: require("../assets/img/Dribbble.svg"),
+          name: "Dribbble",
+          description: "Designers community",
+          price: "Free",
+          priceimgMobile: require("../assets/img/Free.svg"),
+          extra: "Pro version available",
+          level: "Easy",
+          levelimgMobile: require("../assets/img/Easy.svg"),
+          learningcurve: "Very low learning curve",
+          explenation:
+            "For me, Dribbble offers you the best examples of all inspirational tools",
+          rating: 5,
+          ratingimg: require("../assets/img/Table-Rating-5.svg"),
+          ratingimgMobile: require("../assets/img/Rating-5.svg"),
+          info:
+            "Dribble is the first website I visit if I need any inspiration for my graphic designs. You can either search, filter or just scroll through featured items that were mostly posted by professional designers. Dribbble has a very wide variety in graphic designs, user interface designs and product designs. Against static user interfaces, you can also find beautiful animations and very nice kinds of typography.",
+          url: "https://dribbble.com/"
+        },
+        {
+          id: 2,
+          logo: require("../assets/img/Lapa-Ninja.svg"),
+          name: "Lapa Ninja",
+          description: "Landing page gallery",
+          price: "Free",
+          priceimgMobile: require("../assets/img/Free.svg"),
+          extra: "No charges",
+          level: "Easy",
+          levelimgMobile: require("../assets/img/Easy.svg"),
+          learningcurve: "Low learning curve",
+          explenation:
+            "Exploring all different subjects of landing pages makes this a powerful tool",
+          rating: 5,
+          ratingimg: require("../assets/img/Table-Rating-5.svg"),
+          ratingimgMobile: require("../assets/img/Rating-5.svg"),
+          info:
+            "Lapa Ninja is a gallery featuring more than 1900 of the best landing page examples from all over the web. You can search for your own subject, or pick one of the many inspiration filter options in the navigation. Next to the gallery, Lapa Ninja also gives you a lot of courses available to be a better designer, make sure to check them out if you are interested!",
+          url: "https://www.lapa.ninja/"
+        },
+        {
+          id: 3,
+          logo: require("../assets/img/Behance.svg"),
+          name: "Behance",
+          description: "Discover graphical content",
+          price: "Free",
+          priceimgMobile: require("../assets/img/Free.svg"),
+          extra: "Premium via Adobe",
+          level: "Hard",
+          levelimgMobile: require("../assets/img/Hard.svg"),
+          learningcurve: "Medium learning curve",
+          explenation:
+            "I like the fact that you can also find graphical content designs agains UI Designs",
+          rating: 4,
+          ratingimg: require("../assets/img/Table-Rating-4.svg"),
+          ratingimgMobile: require("../assets/img/Rating-4.svg"),
+          info:
+            "Behance by Adobe is a well made inspirational website for either graphic designers and web designers. Make your way to the search icon on the top right corner and filter or search what you are looking for. If you check out the details of an item, you can scroll down and see how the designer made it, which tools where used, ... which may be useful for a further step in your design process.",
+          url: "https://www.behance.net/"
+        },
+        {
+          id: 4,
+          logo: require("../assets/img/UI-Movement.svg"),
+          name: "UI Movement",
+          description: "Designers community",
+          price: "Free",
+          priceimgMobile: require("../assets/img/Free.svg"),
+          extra: "Sponsorship possible",
+          level: "Easy",
+          levelimgMobile: require("../assets/img/Easy.svg"),
+          learningcurve: "Low learning curve",
+          explenation:
+            "All inspiration is brought to you by video content, a great positive!",
+          rating: 4,
+          ratingimg: require("../assets/img/Table-Rating-4.svg"),
+          ratingimgMobile: require("../assets/img/Rating-4.svg"),
+          info:
+            "UI Movement isn't really like the previous inspirational websites. On this site, you will mostly get inspired by wonderful animations you can use in your site. The best thing to do is safe the ones you really like so you can get back to them when you are ready to develop! If you are interested in weekly inspiration, you can subscribe to their newsletter for free.",
+          url: "https://uimovement.com/"
+        },
+        {
+          id: 5,
+          logo: require("../assets/img/Awwwards.svg"),
+          name: "Awwwards",
+          description: "Best site prize winners",
+          price: "Free",
+          priceimgMobile: require("../assets/img/Free.svg"),
+          extra: "Premium via Adobe",
+          level: "Medium",
+          levelimgMobile: require("../assets/img/Medium.svg"),
+          learningcurve: "Medium learning curve",
+          explenation:
+            "A good chance to outstand other designers if you are confident about your concept",
+          rating: 3,
+          ratingimg: require("../assets/img/Table-Rating-3.svg"),
+          ratingimgMobile: require("../assets/img/Rating-3.svg"),
+          info:
+            "Last but not least is Awwwards. They feature the latest and the greatest websites all over the internet. You can not only look at a design, but you are also able to visit the sites and interact with it. This gives you the chance to experience the design yourself. ",
+          url: "https://www.awwwards.com/"
         }
-    },
+      ]
+    };
+  },
 
-    methods: {
-        toggle(id) {
-            const index = this.opened.indexOf(id);
-            if (index > -1) {
-                this.opened.splice(index, 1)
-            } else {
-                this.opened.push(id)
-            }
-        }
+  methods: {
+    toggle(id) {
+      const index = this.opened.indexOf(id);
+      if (index > -1) {
+        this.opened.splice(index, 1);
+      } else {
+        this.opened.push(id);
+      }
     }
-}
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -654,12 +683,13 @@ export default {
 
     @media (max-width: 480px) {
         .titlebox {
+            width: 90%;
             padding-bottom: 40%;
 
             .big-number {
                 width: 30%;
                 font-size: 15vw;
-                line-height: unset;
+                vertical-align: text-bottom;
             }
 
             .title {
@@ -675,48 +705,93 @@ export default {
             }
         }
 
-        .tablebox table {
-            .tableheader {
-                th:first-child {
-                    width: 100%;
-                }
+        .tablebox {
+            width: 90%;
 
-                th:nth-child(2), th:nth-child(3) {
-                    display: none;
-                }
-            }
-
-            .tabledata {
-                .tool {
-                    width: 60%;
-                }
-                .pricing, .difficulty {
-                    display: none;
-                }
-
-                .mobiledata {
-                    display: flex;
-                    justify-content: space-between;
-                    flex-wrap: nowrap;
-                    width: 30%;
-                    padding-right: 3%;
-
-                    img {
-                        width: 25%;
-                        max-height: 40px;
+            table {
+                .tableheader {
+                    th:first-child {
+                        width: 100%;
                     }
 
-                    .mobilelevel {
-                        padding: 0 4%;
+                    th:nth-child(2), th:nth-child(3) {
+                        display: none;
                     }
                 }
 
-                .open {
-                    width: 10%;
-                }
+                .tabledata {
+                    .tool {
+                        width: 60%;
+                    }
+                    .pricing, .difficulty {
+                        display: none;
+                    }
 
-                .more .visitbutton {
-                    margin: 0 auto 20px auto;
+                    .mobiledata {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: nowrap;
+                        width: 30%;
+                        padding-right: 3%;
+                        position: relative;
+
+                        .popup {
+                            display: none;
+                            position: absolute;
+                            top: -40px;
+                            left: 0;
+                            width: 90%;
+                            background-color: $light-background;
+                            border: 3px solid $action-color;
+                            border-radius: 7px;
+                            text-align: center;
+
+                            p {
+                                margin: 0 auto;
+                                color: $text-color;
+                                font-family: 'Open Sans';
+                                font-weight: normal;
+                                font-size: .9em;
+                                padding: 2px 5px;
+                            }
+                        }
+
+                        img {
+                            width: 25%;
+                            max-height: 40px;
+                        }
+
+                        .mobileprice {
+                            &:hover ~ .price-popup {
+                                cursor: pointer;
+                                display: block;
+                            }
+                        }
+
+                        .mobilelevel {
+                            padding: 0 4%;
+
+                            &:hover ~ .level-popup {
+                                cursor: pointer;
+                                display: block;
+                            }
+                        }
+
+                        .mobilerating {
+                            &:hover ~ .rating-popup {
+                                cursor: pointer;
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .open {
+                        width: 10%;
+                    }
+
+                    .more .visitbutton {
+                        margin: 0 auto 20px auto;
+                    }
                 }
             }
         } 
@@ -725,6 +800,12 @@ export default {
     @media (max-width: 350px) {
         .titlebox .title {
             padding-left: 0;
+        }
+    }
+
+    @media (min-width: 1650px) {
+        .titlebox, .tablebox {
+            width: 70%;
         }
     }
 }

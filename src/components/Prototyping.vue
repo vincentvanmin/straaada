@@ -18,7 +18,13 @@
                                 <h5><a v-bind:href="resource.url" target="_blank" rel="noreferrer noopener">{{resource.name}}</a></h5>
                                 <div class="properties">
                                     <img v-bind:src="resource.priceimg" v-bind:alt="resource.price" class="pricing">
+                                    <div class="popup price-popup">
+                                        <p>{{ resource.price }}</p>
+                                    </div>
                                     <img v-bind:src="resource.ratingimg" alt="My personal rating" class="rating">
+                                    <div class="popup rating-popup">
+                                        <p>{{ resource.rating + " / 5" }}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -61,8 +67,17 @@
                         </td>
                         <td class="mobiledata">
                             <img v-bind:src="tool.priceimgMobile" v-bind:alt="tool.price" class="mobileprice">
+                            <div class="popup price-popup">
+                                <p>{{ tool.price }}</p>
+                            </div>
                             <img v-bind:src="tool.levelimgMobile" v-bind:alt="tool.level" class="mobilelevel">
+                            <div class="popup level-popup">
+                                <p>{{ tool.level }}</p>
+                            </div>
                             <img v-bind:src="tool.ratingimgMobile" alt="This is my personal rating for this tool" class="mobilerating">
+                            <div class="popup rating-popup">
+                                <p>{{ tool.rating + " stars" }}</p>
+                            </div>
                         </td>
                         <td class="open">
                             <img @click="toggle(tool.id)" :class="{ opened: opened.includes(tool.id) }" src="../assets/img/Chevron-Right.svg" alt="More info" class="chevron">
@@ -646,6 +661,32 @@ export default {
                                 display: flex;
                                 justify-content: flex-end;
                                 flex-wrap: nowrap;
+                                position: relative;
+
+                                .popup {
+                                    opacity: 0;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 110%;
+                                    width: 0;
+                                    background-color: $light-background;
+                                    border: 3px solid $action-color;
+                                    border-radius: 7px;
+                                    text-align: center;
+                                    overflow: hidden;
+                                    transition: all .5s;
+
+                                    p {
+                                        margin: 0 auto;
+                                        color: $text-color;
+                                        font-family: 'Open Sans';
+                                        font-weight: normal;
+                                        font-size: .9em;
+                                        padding: 2px 5px;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                    }
+                                }
 
                                 .pricing {
                                     flex-direction: row;
@@ -653,11 +694,26 @@ export default {
                                     padding-top: 2px;
                                     margin-right: 10%;
                                     max-height: 30px;
+
+                                    &:hover ~ .price-popup {
+                                        cursor: pointer;
+                                        opacity: 1;
+                                        width: 150%;
+                                        transition: all .3s ease-out;
+                                    }
                                 }
+
                                 .rating {
                                     flex-direction: row;
                                     width: 45%;
                                     max-height: 30px;
+
+                                    &:hover ~ .rating-popup {
+                                        cursor: pointer;
+                                        opacity: 1;
+                                        width: 150%;
+                                        transition: all .3s ease-out;
+                                    }
                                 }
                             }
                         }
@@ -1180,6 +1236,10 @@ export default {
 
                                     .pricing {
                                         width: 100%;
+
+                                        &:hover ~ .price-popup {
+                                            width: 200%;
+                                        }
                                     }
 
                                     .rating {
@@ -1360,12 +1420,13 @@ export default {
 
     @media (max-width: 480px) {
         .titlebox {
+            width: 90%;
             padding-bottom: 40%;
 
             .big-number {
                 width: 30%;
                 font-size: 15vw;
-                line-height: unset;
+                vertical-align: text-bottom;
             }
 
             .title {
@@ -1381,48 +1442,103 @@ export default {
             }
         }
 
-        .design .tablebox table {
-            .tableheader {
-                th:first-child {
-                    width: 100%;
-                }
+        .design {
+            width: 90%;
 
-                th:nth-child(2), th:nth-child(3) {
-                    display: none;
-                }
-            }
-
-            .tabledata {
-                .tool {
-                    width: 60%;
-                }
-                .pricing, .difficulty {
-                    display: none;
-                }
-
-                .mobiledata {
-                    display: flex;
-                    justify-content: space-between;
-                    flex-wrap: nowrap;
-                    width: 30%;
-                    padding-right: 3%;
-
-                    img {
-                        width: 25%;
-                        max-height: 40px;
+            .tablebox table {
+                .tableheader {
+                    th:first-child {
+                        width: 100%;
                     }
 
-                    .mobilelevel {
-                        padding: 0 4%;
+                    th:nth-child(2), th:nth-child(3) {
+                        display: none;
                     }
                 }
 
-                .more .visitbutton {
-                    margin: 0 auto 20px auto;
-                }
+                .tabledata {
+                    .tool {
+                        width: 60%;
+                    }
+                    .pricing, .difficulty {
+                        display: none;
+                    }
 
-                .open {
-                    width: 10%;
+                    .mobiledata {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: nowrap;
+                        width: 30%;
+                        padding-right: 3%;
+                        position: relative;
+
+                        .popup {
+                            opacity: 0;
+                            position: absolute;
+                            top: -40px;
+                            left: 0;
+                            width: 0;
+                            background-color: $light-background;
+                            border: 3px solid $action-color;
+                            border-radius: 7px;
+                            text-align: center;
+                            overflow: hidden;
+                            transition: all .5s;
+
+                            p {
+                                margin: 0 auto;
+                                color: $text-color;
+                                font-family: 'Open Sans';
+                                font-weight: normal;
+                                font-size: .9em;
+                                padding: 2px 5px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                            }
+                        }
+
+                        img {
+                            width: 25%;
+                            max-height: 40px;
+                        }
+
+                        .mobileprice {
+                            &:hover ~ .price-popup {
+                                cursor: pointer;
+                                opacity: 1;
+                                width: 90%;
+                                transition: all .3s ease-out;
+                            }
+                        }
+
+                        .mobilelevel {
+                            padding: 0 4%;
+
+                            &:hover ~ .level-popup {
+                                cursor: pointer;
+                                opacity: 1;
+                                width: 90%;
+                                transition: all .3s ease-out;
+                            }
+                        }
+
+                        .mobilerating {
+                            &:hover ~ .rating-popup {
+                                cursor: pointer;
+                                opacity: 1;
+                                width: 90%;
+                                transition: all .3s ease-out;
+                            }
+                        }
+                    }
+
+                    .more .visitbutton {
+                        margin: 0 auto 20px auto;
+                    }
+
+                    .open {
+                        width: 10%;
+                    }
                 }
             }
         } 
@@ -1431,6 +1547,21 @@ export default {
     @media (max-width: 350px) {
         .titlebox .title {
             padding-left: 0;
+        }
+
+        .design .tablebox table .tabledata .mobiledata .popup {
+            width: 90%;
+            left: 0;
+        }
+    }
+
+    @media (min-width: 1650px) {
+        .titlebox, .process .balls, .design {
+            width: 70%;
+        }
+
+        .process .balls {
+            padding-bottom: 15%;
         }
     }
 }

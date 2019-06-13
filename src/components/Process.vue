@@ -43,6 +43,12 @@
                     <img class="more-chevron-active" src="../assets/img/More-Chevron-Active.svg" alt="Go to Prototyping">
                 </a> 
             </div>
+            <div data-aos="fade-up" class="box mobilebox">
+                <div class="step">
+                    <h3>The process</h3>
+                    <p>Note that this website is more visible and advanced when displayed on a bigger device. If you like what you are reading, make sure to open Straaada on your desktop or tablet! Enjoy the learning process.</p>
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -67,6 +73,10 @@ export default {
         display: flex;
         justify-content: space-between;
         width: 75%;
+
+        .mobilebox {
+            display: none;
+        }
 
         .box {
             margin-top: -50px;
@@ -250,7 +260,32 @@ export default {
     }
 
     @media (max-width: 640px) {
-        display: none;
+        .boxes {
+            width: 80%;
+            padding-bottom: 100px;
+
+            .box {
+                display: none;
+            }
+
+            .mobilebox {
+                margin: -50px 0 0 0;
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .boxes {
+            width: 90%;
+        }
+    }
+
+    @media (min-width: 1650px) {
+        .boxes {
+            width: 70%;
+        }
     }
 }
 

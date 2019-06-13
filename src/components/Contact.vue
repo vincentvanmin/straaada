@@ -422,7 +422,12 @@ export default {
     @media (max-width: 480px) {
         padding-bottom: 100px;
 
+        .subtitle {
+            width: 90%;
+        }
+
         .formbox {
+            width: 90%;
             padding-top: 50px;
 
             .container .row .col form .formfields .inputrating {
@@ -431,6 +436,12 @@ export default {
                 }
             }
         } 
+    }
+
+    @media (min-width: 1650px) {
+        .subtitle, .formbox {
+            width: 70%;
+        }
     }
 }
 </style>

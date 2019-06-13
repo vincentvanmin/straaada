@@ -122,7 +122,7 @@ export default {
     .headertext {
         margin-left: 12.5%;
         padding-top: 100px;
-        max-width: 40%;
+        width: 40%;
 
         h1 {
             font-family: 'Nunito';
@@ -223,7 +223,7 @@ export default {
     @media (max-width: 960px) {
         .headertext {
             margin-left: 10%;
-            max-width: 50%;
+            width: 50%;
 
             h1 {
                 font-size: 3.5vw;
@@ -258,7 +258,7 @@ export default {
         min-height: auto;
 
         .headertext {
-            max-width: 80%;
+            width: 80%;
             padding-top: 50px;
 
             h1 {
@@ -293,8 +293,13 @@ export default {
     }
 
     @media (max-width: 480px) {
-        .headertext h1 {
-            font-size: 7vw;
+        .headertext {
+            width: 90%;
+            margin: 0 auto;
+
+            h1 {
+                font-size: 7vw;
+            }
         }
 
         .tabletroad {
@@ -303,13 +308,19 @@ export default {
 
         .mobileroad {
             display: block;
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
             padding: 50px 0 100px 0;
 
             img {
                 width: 100%;
             }
+        }
+    }
+
+    @media (min-width: 1650px) {
+        .headertext {
+            margin-left: 15%;
         }
     }
 }

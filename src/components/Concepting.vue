@@ -610,11 +610,6 @@ export default {
         }
 
         .option {
-            .subtitle {
-                border-top: solid 3px $action-color;
-                border-bottom: solid 3px $action-color;
-            }
-
             .concept {
                 .right {
                     .counter .line {
@@ -856,9 +851,12 @@ export default {
 
     @media (max-width: 480px) {
         .titlebox {
+            width: 90%;
+
             .big-number {
                 width: 30%;
                 font-size: 15vw;
+                vertical-align: text-bottom;
             }
 
             .title {
@@ -870,30 +868,40 @@ export default {
             }
         }
 
-        .option .concept {
-            .right {
-                .counter {
-                    max-width: 20%;
-                }
+        .option {
+            width: 90%;
 
-                .steps {
-                    width: 80%;
-                }
-
-                .icons .icon {
-                    width: 50%;
-                    padding-bottom: 15px;
-
-                    img {
-                        width: 35%;
-                    }
-                }
-
-                .visitbutton {
-                    margin: 0 auto;
+            .subtitle {
+                h4 {
+                    margin-bottom: 12px;
                 }
             }
-        }
+
+            .concept {
+                .right {
+                    .counter {
+                        max-width: 20%;
+                    }
+
+                    .steps {
+                        width: 80%;
+                    }
+
+                    .icons .icon {
+                        width: 50%;
+                        padding-bottom: 15px;
+
+                        img {
+                            width: 35%;
+                        }
+                    }
+
+                    .visitbutton {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        } 
     }
 
     @media (max-width: 350px) {
@@ -910,6 +918,12 @@ export default {
                 width: 100%;
                 padding-left: 0;
             }
+        }
+    }
+
+    @media (min-width: 1650px) {
+        .titlebox, .option, .more-tools {
+            width: 70%;
         }
     }
 }
