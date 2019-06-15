@@ -439,7 +439,7 @@ export default {
                     ratingimg: require('../assets/img/Table-Rating-4.svg'),
                     ratingimgMobile: require('../assets/img/Rating-4.svg'),
                     video: "https://www.youtube.com/embed/v10t2azNaFs",
-                    info: "Invision built an amazing platform, inspired by world’s best design teams. It’s an all-in-one application available for Mac and Windows. Turn your ideas into powerful, responsive and animated designs with the vecor-based capabilities. Collaborate with your team to finish the design and start building a prototype. I really recommend you to take a look!",
+                    info: "Invision built an amazing platform, inspired by world’s best design teams. It’s an all-in-one application available for Mac and Windows. Turn your ideas into powerful, responsive and animated designs with the vector-based capabilities. Collaborate with your team to finish the design and start building a prototype. I really recommend you to take a look!",
                     url: "https://www.invisionapp.com/studio"
                 },
                 {

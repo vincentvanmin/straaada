@@ -3,6 +3,7 @@
         <div class="headertext">
             <h1>Start building your website with a stunning design</h1>
             <h2>Create your own web pages using this simple 3-step process. You will be reached all the tools needed to complete a perfect UI Design.</h2>
+            <a href="https://youtu.be/PcqLK961TKo" class="watchvideo" target="_blank" rel="noreferrer noopener">What is Straaada?</a>
         </div>
         <div data-aos="fade-up" data-aos-delay="500" class="road">
             <svg width="1140px" height="604px" viewBox="0 0 1140 604" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -140,7 +141,35 @@ export default {
             line-height: 30px;
             color: $text-color;
             max-width: 440px;
-            padding: 20px 0 350px 0;
+            padding: 20px 0 20px 0;
+        }
+
+        .watchvideo {
+            display: block;
+            width: 210px;
+            height: 40px;
+            position: relative;
+            text-decoration: none;
+            font-family: 'Open Sans';
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 20px;
+            color: #fff;
+            text-align: center;
+            padding: 7px 0;
+            background-color: $action-color;
+            border: solid 3px $action-color;
+            transition: all .5s;
+            border-radius: 20px;
+            margin: 0 0 300px 0;
+            z-index: 5;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $light-background;
+                color: $action-color;
+                transition: all .5s;
+            }
         }
     }
 
@@ -268,7 +297,10 @@ export default {
             h2 {
                 width: 90%;
                 max-width: none;
-                padding-bottom: 0;
+            }
+
+            .watchvideo {
+                margin-bottom: 0;
             }
         }
 
