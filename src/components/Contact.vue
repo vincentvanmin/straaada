@@ -21,7 +21,7 @@
                                     <mdb-input v-model="form.url" name="url" label="URL (optional)" group type="url" validate error="wrong" success="right" class="inputurl" />
                                     <select v-model="form.reason" name="reason" class="browser-default custom-select inputreason" required>
                                         <option class="select-placeholder" value="" disabled selected>What's the reason for contacting me?</option>
-                                        <option value="Feedback">Aks for feedback</option>
+                                        <option value="Feedback">Ask for feedback</option>
                                         <option value="Suggestion">Suggestion for Straaada</option>
                                         <option value="Question">Other question</option>
                                     </select>

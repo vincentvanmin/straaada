@@ -2,7 +2,7 @@
     <section id="help" name="help">
         <div class="subtitle">
             <h4>Need help?</h4>
-            <p class="description">If you have some trouble finding the rhythm in this step, make sure to check out this video so you can seehow a designer goes to work with Invision Freehand. Get some free hints!</p>
+            <p class="description">If you have some trouble finding the rhythm in this step, make sure to check out this video so you can see how a designer goes to work with Invision Freehand. Get some free hints!</p>
         </div>
         <div class="videobox">
             <div id="helpvideo">
