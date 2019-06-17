@@ -61,7 +61,7 @@ export default {
 
 <style lang="scss" scoped>
 #process {
-    background-image: url('../assets/img/Working.webp');
+    background-image: url('../assets/img/Working.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -162,7 +162,7 @@ html {
   max-width: 100vw;
   font-family: 'Open Sans', sans-serif;
   color: $text-color;
-  // background-image: url('./assets/img/Mountain.png');
+  // background-image: url('./assets/img/Mountain.jpg');
   // background-repeat: no-repeat;
   // background-size: cover;
   // background-position: top;
@@ -170,7 +170,7 @@ html {
   // z-index: -5;
 
   &::before{
-    background-image:url('./assets/img/Mountain.webp');
+    background-image:url('./assets/img/Mountain.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -185,6 +185,10 @@ html {
   header {
     height: 80px; /* 60 + 20px */
     position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
     /* negative top allows for 20 pixels of movement before sticking */
     top: -20px;
     z-index: 99;
@@ -198,6 +202,10 @@ html {
       display: block;
       height: 20px;
       position: sticky;
+      position: -webkit-sticky;
+      position: -moz-sticky;
+      position: -ms-sticky;
+      position: -o-sticky;
     }
 
     /* SHADOW */
@@ -228,6 +236,10 @@ html {
 
       height: 60px;
       position: sticky;
+      position: -webkit-sticky;
+      position: -moz-sticky;
+      position: -ms-sticky;
+      position: -o-sticky;
       top: 0px;
       /* compensate for shadow with negative margin */
       margin-top: -20px;
