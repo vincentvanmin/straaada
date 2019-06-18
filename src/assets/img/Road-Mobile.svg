@@ -42,7 +42,7 @@
                         </g>
                     </g>
                 </g>
-                <g id="Text" transform="translate(82.571875, 15.000000)" fill="#322673" font-family="Nunito-SemiBold, Nunito" font-size="16" font-weight="500" letter-spacing="-0.0160000134" line-spacing="20">
+                <g id="Text" transform="translate(82.571875, 15.000000)" fill="#322673" font-family="Nunito-SemiBold, Nunito, Arial" font-size="16" font-weight="500" letter-spacing="-0.0160000134" line-spacing="20">
                     <text id="Design-&amp;-Prototype" transform="translate(88.000000, 180.000000) scale(-1, -1) rotate(-180.000000) translate(-88.000000, -180.000000) ">
                         <tspan x="0" y="190">DESIGN &amp; PROTOTYPE</tspan>
                     </text>
