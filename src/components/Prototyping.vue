@@ -376,7 +376,7 @@ export default {
                             name: "Adobe Fonts",
                             price: "Paid",
                             priceimg: require('../assets/img/Paid.svg'),
-                            rating: 4,
+                            rating: 5,
                             ratingimg: require('../assets/img/Rating-5.svg'),
                             url: "https://fonts.adobe.com/"
                         },
