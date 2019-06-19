@@ -10,13 +10,15 @@
             </div>
         </div>
         <div class="buttons">
-            <a data-aos="fade-right" id="watch-tutorial-button" @click="showTutorialVideo">Watch video</a>
-            <a data-aos="fade-left" id="continue-to-contact-button" href="#contact">Continue</a>
+            <a id="watch-tutorial-button" @click="showTutorialVideo">Watch video</a>
+            <a id="continue-to-contact-button" href="#contact">Continue</a>
         </div>
     </section>
 </template>
 
 <script>
+import AOS from 'aos';
+
 export default {
     name: 'help',
 
@@ -24,6 +26,8 @@ export default {
         showTutorialVideo: function() {
             document.getElementById('tutorialvideo').style.padding = "0 0 56.25% 0";
             document.getElementById('watch-tutorial-button').style.display = "none";
+
+            AOS.refresh();
         },
 
         // hideTutorialVideo: function() {

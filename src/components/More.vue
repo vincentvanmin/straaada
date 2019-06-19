@@ -25,13 +25,15 @@
             </div>
         </div>
         <div class="buttons">
-            <a data-aos="fade-right" id="viewbutton" @click="showContent">View more</a>
-            <a data-aos="fade-left" id="continuebutton" href="#prototyping">Continue</a>
+            <a id="viewbutton" @click="showContent">View more</a>
+            <a id="continuebutton" href="#prototyping">Continue</a>
         </div>
     </section>
 </template>
 
 <script>
+import AOS from 'aos';
+
 export default {
     name: 'more',
 
@@ -40,6 +42,8 @@ export default {
             document.getElementById('muzli').style.height = "auto";
             document.getElementById('muzliball').style.transform = "scale(1)";
             document.getElementById('viewbutton').style.display = "none";
+
+            AOS.refresh();
         }
     }
 }

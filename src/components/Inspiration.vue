@@ -53,7 +53,7 @@
             </div>
             <img v-bind:src="tool.ratingimgMobile" alt="This is my personal rating for this tool" class="mobilerating">
             <div class="popup rating-popup">
-              <p>{{ tool.rating + " stars" }}</p>
+              <p>{{ tool.rating + " / 5" }}</p>
             </div>
           </td>
           <td class="open">
